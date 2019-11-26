@@ -7,7 +7,7 @@ export default class Header extends React.Component {
                 <div className="container">
                     <div className="top-navigation-box">
                         <a href="index.html" className="main-logo">
-                            <img src="../../../public/images/nerds-logo.png" alt="nerds-logo" />
+                            <img src="../../assets/nerds-logo.png" alt="nerds-logo" />
                         </a>
                         <nav className="main-navigation">
                             <ul className="navigation-list">
@@ -31,7 +31,13 @@ export default class Header extends React.Component {
                     </div>
 
                     <div className="slider-box">
-                        <input id="radio1" type="radio" name="slider-control" value="" checked />
+                        <input
+                            id="radio1"
+                            type="radio"
+                            name="slider-control"
+                            value=""
+                            defaultChecked
+                        />
                         <input id="radio2" type="radio" name="slider-control" value="" />
                         <input id="radio3" type="radio" name="slider-control" value="" />
 

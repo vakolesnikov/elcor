@@ -574,30 +574,30 @@ body{
 }
 
 
-/*.social-vk{*/
-/*    background: #e1e1e1 url("img/vk-icon.png") no-repeat center;*/
-/*}*/
+.social-vk{
+    background: #e1e1e1 url("../../assets/vk-icon.png") no-repeat center;
+}
 
-/*.social-vk:active{*/
-/*    background: #d7373b url("img/vk-icon-opacity.png") no-repeat center;*/
-/*}*/
+.social-vk:active{
+    background: #d7373b url("../../assets/vk-icon-opacity.png") no-repeat center;
+}
 
 
-/*.social-fb{*/
-/*    background: #e1e1e1 url("img/fb-icon.png") no-repeat center;*/
-/*}*/
+.social-fb{
+    background: #e1e1e1 url("../../assets/fb-icon.png") no-repeat center;
+}
 
-/*.social-fb:active{*/
-/*    background: #d7373b url("img/fb-icon-opacity.png") no-repeat center;*/
-/*}*/
+.social-fb:active{
+    background: #d7373b url("../../assets/fb-icon-opacity.png") no-repeat center;
+}
 
-/*.social-insta{*/
-/*    background: #e1e1e1 url("img/insta-icon.png") no-repeat center;*/
-/*}*/
+.social-insta{
+    background: #e1e1e1 url("../../assets/insta-icon.png") no-repeat center;
+}
 
-/*.social-insta:active{*/
-/*    background: #d7373b url("img/insta-icon-opacity.png") no-repeat center;*/
-/*}*/
+.social-insta:active{
+    background: #d7373b url("../../assets/insta-icon-opacity.png") no-repeat center;
+}
 
 .social-box{
     padding-top: 3px;
@@ -993,18 +993,18 @@ body{
     margin-bottom: 17px;
 }
 
-/*.features-checkbox::after{*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 2px;*/
-/*    content: "";*/
-/*    display: block;*/
-/*    width: 35px;*/
-/*    height: 23px;*/
-/*    background: url('img/checkbox-off.png') no-repeat;*/
-/*    opacity: 0.4;*/
+.features-checkbox::after{
+    position: absolute;
+    top: 0;
+    left: 2px;
+    content: "";
+    display: block;
+    width: 35px;
+    height: 23px;
+    background: url('../../assets/checkbox-off.png') no-repeat;
+    opacity: 0.4;
 
-/*}*/
+}
 
 .features-checkbox:hover::after{
     opacity: 1;
@@ -1028,7 +1028,6 @@ body{
 
 .features_item input[type="checkbox"]:checked ~ .features-checkbox::after{
     background: url('../../assets/checkbox-on.png') no-repeat;
-
 }
 
 .button-form{

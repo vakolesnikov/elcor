@@ -17,7 +17,7 @@ export default class Popup extends React.Component {
                         <div className="main-button maps-button">напишите нам</div>
                     </div>
                     <div className="maps-marker">
-                        <img src="../../../public/images/map-marker.png" alt="images" />
+                        <img src="../../assets/map-marker.png" alt="images" />
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ export default class Main extends React.Component {
                     <div className="product">
                         <div className="product-item">
                             <header className="product-header">
-                                <img src="../../../public/images/illustration-1.png" alt="images" />
+                                <img src="../../assets/illustration-1.png" alt="images" />
                             </header>
                             <h2 className="product-title">Веб-сайты</h2>
                             <div className="product-text">
@@ -21,7 +21,7 @@ export default class Main extends React.Component {
 
                         <div className="product-item">
                             <header className="product-header">
-                                <img src="../../../public/images/illustration-2.png" alt="images" />
+                                <img src="../../assets/illustration-2.png" alt="images" />
                             </header>
                             <h2 className="product-title">приложения</h2>
                             <div className="product-text">
@@ -34,7 +34,7 @@ export default class Main extends React.Component {
 
                         <div className="product-item">
                             <header className="product-header">
-                                <img src="../../../public/images/illustration-3.png" alt="images" />
+                                <img src="../../assets/illustration-3.png" alt="images" />
                             </header>
                             <h2 className="product-title">презентации</h2>
                             <div className="product-text">
@@ -67,7 +67,7 @@ export default class Main extends React.Component {
                         <div className="advantages">
                             <div className="advantages-logo">
                                 <img
-                                    src="../../../public/images/nerds-illustration.png"
+                                    src="../../assets/nerds-illustration.png"
                                     alt="images"
                                 />
                             </div>
@@ -100,19 +100,19 @@ export default class Main extends React.Component {
                     </div>
                     <div className="partners">
                         <div className="partners-item">
-                            <img src="../../../public/images/logo-1.png" alt="images" />
+                            <img src="../../assets/logo-1.png" alt="images" />
                         </div>
 
                         <div className="partners-item">
-                            <img src="../../../public/images/logo-2.png" alt="images" />
+                            <img src="../../assets/logo-2.png" alt="images" />
                         </div>
 
                         <div className="partners-item">
-                            <img src="../../../public/images/logo-3.png" alt="images" />
+                            <img src="../../assets/logo-3.png" alt="images" />
                         </div>
 
                         <div className="partners-item">
-                            <img src="../../../public/images/logo-4.png" alt="images" />
+                            <img src="../../assets/logo-4.png" alt="images" />
                         </div>
                     </div>
                 </main>
