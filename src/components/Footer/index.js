@@ -6,9 +6,11 @@ export default class Footer extends React.Component {
             <div className="container">
                 <footer className="main-footer">
                     <div className="social">
-                        <a href="/" className="social-item social-vk" />
-                        <a href="/" className="social-item social-fb" />
-                        <a href="/" className="social-item social-insta" />
+                        <a href="https://vk.com/elcor58" className="social-item social-vk" />
+                        <a
+                            href="https://instagram.com/elcor58"
+                            className="social-item social-insta"
+                        />
                     </div>
                     <div className="social-box">
                         <span className="social-title">Давайте дружить, это выгодно!</span>

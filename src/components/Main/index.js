@@ -1,49 +1,37 @@
 import React from 'react';
 
+import ProductItem from '../ProductItem';
+
+import logo1 from '../../assets/logo-1.png';
+import logo2 from '../../assets/logo-2.png';
+import logo3 from '../../assets/logo-3.png';
+import logo4 from '../../assets/logo-4.png';
+import nerdsIllustration from '../../assets/nerds-illustration.png';
+
+import apple from '../../assets/apple.jpg';
+import xiaomi from '../../assets/xiaomi.jpg';
+import samsung from '../../assets/samsung.jpeg';
+
+import appleLogo from '../../assets/appleLogo.png';
+import xiaomiLogo from '../../assets/xiaomiLogo.png';
+import samsungLogo from '../../assets/samsungLogo.png';
+
+
+const products = [
+    { title: 'apple', img: apple },
+    { title: 'samsung', img: samsung },
+    { title: 'xiaomi', img: xiaomi }
+];
+
 export default class Main extends React.Component {
     render() {
         return (
             <div className="container">
                 <main>
                     <div className="product">
-                        <div className="product-item">
-                            <header className="product-header">
-                                <img src="../../assets/illustration-1.png" alt="images" />
-                            </header>
-                            <h2 className="product-title">Веб-сайты</h2>
-                            <div className="product-text">
-                                Мир никогда не будет прежним после того как увидит ваш сайт!
-                            </div>
-                            <a href="/" className="main-button button_mod_left">
-                                заказать
-                            </a>
-                        </div>
-
-                        <div className="product-item">
-                            <header className="product-header">
-                                <img src="../../assets/illustration-2.png" alt="images" />
-                            </header>
-                            <h2 className="product-title">приложения</h2>
-                            <div className="product-text">
-                                Покорите топ-10 приложений в AppStore и Google Play
-                            </div>
-                            <a href="/" className="main-button button_mod_center">
-                                заказать
-                            </a>
-                        </div>
-
-                        <div className="product-item">
-                            <header className="product-header">
-                                <img src="../../assets/illustration-3.png" alt="images" />
-                            </header>
-                            <h2 className="product-title">презентации</h2>
-                            <div className="product-text">
-                                Вы даже не подозреваете, насколько вы изумительны!
-                            </div>
-                            <a href="/" className="main-button button_mod_right">
-                                заказать
-                            </a>
-                        </div>
+                        {products.map((product, index) => (
+                            <ProductItem title={product.title} key={index} img={product.img} />
+                        ))}
                     </div>
                     <div className="nerds-information">
                         <div className="information-box">
@@ -66,10 +54,7 @@ export default class Main extends React.Component {
 
                         <div className="advantages">
                             <div className="advantages-logo">
-                                <img
-                                    src="../../assets/nerds-illustration.png"
-                                    alt="images"
-                                />
+                                <img src={nerdsIllustration} alt="images" />
                             </div>
                             <div className="advantages-box">
                                 <div className="advantages-title">
@@ -99,21 +84,13 @@ export default class Main extends React.Component {
                         </div>
                     </div>
                     <div className="partners">
-                        <div className="partners-item">
-                            <img src="../../assets/logo-1.png" alt="images" />
-                        </div>
+                        <img src={appleLogo} alt="images" className="partners-item" />
 
-                        <div className="partners-item">
-                            <img src="../../assets/logo-2.png" alt="images" />
-                        </div>
+                        <img src={samsungLogo} alt="images" className="partners-item" />
 
-                        <div className="partners-item">
-                            <img src="../../assets/logo-3.png" alt="images" />
-                        </div>
+                        <img src={xiaomiLogo} alt="images" className="partners-item" />
 
-                        <div className="partners-item">
-                            <img src="../../assets/logo-4.png" alt="images" />
-                        </div>
+                        <img src={logo4} alt="images" className="partners-item" />
                     </div>
                 </main>
             </div>

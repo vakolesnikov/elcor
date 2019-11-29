@@ -1,5 +1,7 @@
 import React from 'react';
 
+import mapMarker from '../../assets/map-marker.png';
+
 export default class Popup extends React.Component {
     render() {
         return (
@@ -17,7 +19,7 @@ export default class Popup extends React.Component {
                         <div className="main-button maps-button">напишите нам</div>
                     </div>
                     <div className="maps-marker">
-                        <img src="../../assets/map-marker.png" alt="images" />
+                        <img src={mapMarker} alt="images" />
                     </div>
                 </div>
             </div>

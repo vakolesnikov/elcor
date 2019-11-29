@@ -1,4 +1,5 @@
 import React from 'react';
+import nerdsLogo from '../../assets/nerds-logo.png';
 
 export default class Header extends React.Component {
     render() {
@@ -7,7 +8,7 @@ export default class Header extends React.Component {
                 <div className="container">
                     <div className="top-navigation-box">
                         <a href="index.html" className="main-logo">
-                            <img src="../../assets/nerds-logo.png" alt="nerds-logo" />
+                            Elcor
                         </a>
                         <nav className="main-navigation">
                             <ul className="navigation-list">

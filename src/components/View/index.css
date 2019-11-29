@@ -28,6 +28,8 @@ body{
 .top-navigation-box{
     display: flex;
     position: relative;
+    align-items: center;
+    padding: 40px 0;
 }
 
 .top-navigation-box a{
@@ -36,8 +38,10 @@ body{
 }
 
 .main-logo{
-    padding-top: 49px;
     width: 160px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .main-logo img{
@@ -53,7 +57,6 @@ body{
 }
 
 .main-navigation{
-    margin-top: 75px;
     flex-grow: 1;
 }
 
@@ -95,7 +98,6 @@ body{
 .basket{
     line-height: 30px;
     margin-left: auto;
-    padding-top: 75px;
     padding-left: 41px;
     position: relative;
     font-weight: 500;
@@ -129,7 +131,7 @@ body{
     height: 15px;
     background-image: url('../../assets/cart-icon.png');
     position: absolute;
-    top: 83px;
+    top: 6px;
     left: 0;
 }
 
@@ -262,7 +264,7 @@ body{
     padding: 16px 0;
     background-color: #fb565a;
     color: white;
-    border-radius: 2px;
+    border-radius: 30px;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
@@ -290,6 +292,10 @@ body{
     width: 300px;
     margin-right: 100px;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .product-item:nth-child(3n){
@@ -298,6 +304,10 @@ body{
 
 .product-header{
     margin-bottom: 21px;
+}
+
+.product-header img {
+    width: 300px;
 }
 
 .product-title{
@@ -462,22 +472,18 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
 }
 
 .partners-item{
-    display: inline-block;
-    text-align: center;
-    width: 260px;
+    max-width: 150px;
     opacity: 0.2;
     margin: 0 20px;
     padding-bottom: 44px;
 }
 
-.partners-item img{
-    margin: 0 auto;
-}
 
 .partners-item:hover{
     opacity: 1;
@@ -493,7 +499,7 @@ body{
     height: 416px;
     margin: 0 auto;
     margin-bottom: 69px;
-    background: url("../../assets/maps.png") no-repeat center;
+    position: relative;
 }
 
 .maps_container{
@@ -502,14 +508,18 @@ body{
     display: flex;
 }
 
+.map {
+    position: absolute;
+}
+
 .studio-information{
     width: 320px;
     height: 307px;
     background-color: white;
-    padding: 0 50px;
-    padding-top: 54px;
-    margin-top: 54px;
-    margin-left: 20px;
+    padding: 50px;
+    margin: 50px;
+    position: relative;
+    z-index: 2;
 }
 
 .studio-information-title{
@@ -546,6 +556,7 @@ body{
 
 .main-footer{
     display: flex;
+    padding-bottom: 50px;
 }
 
 .social{
@@ -1028,6 +1039,7 @@ body{
 
 .features_item input[type="checkbox"]:checked ~ .features-checkbox::after{
     background: url('../../assets/checkbox-on.png') no-repeat;
+
 }
 
 .button-form{
