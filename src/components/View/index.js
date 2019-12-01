@@ -1,8 +1,9 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Header from '../Header';
 import Main from '../Main';
+import Catalog from '../Catalog';
 import Footer from '../Footer';
-import Map from '../Map';
 import './index.css';
 
 export default class View extends React.Component {
@@ -10,8 +11,10 @@ export default class View extends React.Component {
         return (
             <div className="main-container">
                 <Header />
-                <Main />
-                <Map />
+                <Switch>
+                    <Route exact path="/" component={Main} />
+                    <Route exact path="/catalog" component={Catalog} />
+                </Switch>
                 <Footer />
             </div>
         );

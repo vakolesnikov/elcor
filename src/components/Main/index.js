@@ -16,6 +16,9 @@ import appleLogo from '../../assets/appleLogo.png';
 import xiaomiLogo from '../../assets/xiaomiLogo.png';
 import samsungLogo from '../../assets/samsungLogo.png';
 
+import elcorLogo from '../../assets/elcor-logo.png';
+import Map from "../Map";
+import {Link} from "react-router-dom";
 
 const products = [
     { title: 'apple', img: apple },
@@ -28,38 +31,50 @@ export default class Main extends React.Component {
         return (
             <div className="container">
                 <main>
-                    <div className="product">
-                        {products.map((product, index) => (
-                            <ProductItem title={product.title} key={index} img={product.img} />
-                        ))}
+                    <div className="main-banner">
+                        <div className="main-banner-item main-banner-item1">
+                            <section className="main-banner-information">
+                                <h2 className="main-banner-title">
+                                    Оригинальная техника
+                                    <br />
+                                    по выгодным ценам.
+                                </h2>
+                                <Link to="/catalog">
+                                    <span className="main-button">Перейти в магазин</span>
+                                </Link>
+                            </section>
+                        </div>
                     </div>
+                    {/*<div className="product">*/}
+                    {/*    {products.map((product, index) => (*/}
+                    {/*        <ProductItem title={product.title} key={index} img={product.img} />*/}
+                    {/*    ))}*/}
+                    {/*</div>*/}
                     <div className="nerds-information">
                         <div className="information-box">
                             <h2 className="nerds-information-title">
-                                Мы — маленькая, но гордая дизайн-студия из Краснодара.
+                                Мы — маленький, но гордый магазин из Пензы.
                             </h2>
                             <div className="nerds-information-text">
-                                Исповедуем принципы минимализма и чистоты. Ставим математический
-                                расчет превыше креатива. Работаем не покладая рук, как роботы.
+                                Исповедуем принципы минимализма и чистоты. Ставим счастье и радость
+                                клиента превыше собственной выгоды. Работаем не покладая рук, как
+                                роботы.
                             </div>
                             <div className="nerds-information-product">
                                 <b>Выполняем заказы на разработку :</b>
                                 <ul className="product-list">
-                                    <li>Веб-сайтов любой сложности</li>
-                                    <li>Мобильных приложений для iOS и Android</li>
-                                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                                    <li>Наш стиль</li>
+                                    <li>Наш скилл</li>
+                                    <li>Наша фишка</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div className="advantages">
-                            <div className="advantages-logo">
-                                <img src={nerdsIllustration} alt="images" />
-                            </div>
+                            <img className="advantages-logo" src={elcorLogo} alt="images" />
+
                             <div className="advantages-box">
-                                <div className="advantages-title">
-                                    с 2004 года Любим точность во всем:
-                                </div>
+                                <div className="advantages-title">Любим точность во всем:</div>
                                 <div className="advantages-content">
                                     <div className="advantages-item">
                                         <span>
@@ -83,15 +98,16 @@ export default class Main extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="partners">
-                        <img src={appleLogo} alt="images" className="partners-item" />
+                    {/*<div className="partners">*/}
+                    {/*    <img src={appleLogo} alt="images" className="partners-item" />*/}
 
-                        <img src={samsungLogo} alt="images" className="partners-item" />
+                    {/*    <img src={samsungLogo} alt="images" className="partners-item" />*/}
 
-                        <img src={xiaomiLogo} alt="images" className="partners-item" />
+                    {/*    <img src={xiaomiLogo} alt="images" className="partners-item" />*/}
 
-                        <img src={logo4} alt="images" className="partners-item" />
-                    </div>
+                    {/*    <img src={logo4} alt="images" className="partners-item" />*/}
+                    {/*</div>*/}
+                    <Map />
                 </main>
             </div>
         );
