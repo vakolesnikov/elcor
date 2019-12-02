@@ -10,12 +10,14 @@ export default class View extends React.Component {
     render() {
         return (
             <div className="main-container">
-                <Header />
-                <Switch>
-                    <Route exact path="/" component={Main} />
-                    <Route exact path="/catalog" component={Catalog} />
-                </Switch>
-                <Footer />
+                <div className="content">
+                    <Header />
+                    <Switch>
+                        <Route exact path="/" component={Main} />
+                        <Route exact path="/catalog" component={Catalog} />
+                    </Switch>
+                    <Footer />
+                </div>
             </div>
         );
     }

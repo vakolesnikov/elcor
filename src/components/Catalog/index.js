@@ -50,7 +50,7 @@ const Catalog = () => (
             </div>
 
             <div className="inner-product-item">
-                <div className="inner-product-header clearfix" />
+                <div className="inner-product-header" />
                 <img src="css/img/img-sedona.jpg" alt="images" width="360px" height="576px" />
                 <div className="product-item-after">
                     <h2 className="item-after-title">Sedona app</h2>
@@ -63,7 +63,7 @@ const Catalog = () => (
                 </div>
             </div>
             <div className="inner-product-item">
-                <div className="inner-product-header clearfix" />
+                <div className="inner-product-header" />
                 <img src="css/img/img-pink.jpg" alt="images" width="360px" height="576px" />
                 <div className="product-item-after">
                     <h2 className="item-after-title">Pink app</h2>

@@ -9,11 +9,8 @@ export default class Header extends React.Component {
                 <div className="container">
                     <div className="top-navigation-box">
                         <Link to="/" className="main-logo">
-                            <div className="main-logo_title">
-                                Elcor&nbsp;
-                                <img className="main-logo_image" src={elcorLogo} alt="elcor-logo" />
-                            </div>
-
+                            <div className="main-logo_title">Elcor</div>
+                            <img className="main-logo_image" src={elcorLogo} alt="elcor-logo" />
                             <span className="main-logo_address">ТЦ "ЦУМ", 1й этаж</span>
                         </Link>
 
