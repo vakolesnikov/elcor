@@ -25,16 +25,16 @@ export default class Header extends React.Component {
                     <nav className="main-navigation">
                         <ul className="navigation-list">
                             <li className="navigation-item">
-                                <Link to="/catalog">apple</Link>
+                                <Link to="/products/apple">apple</Link>
                             </li>
                             <li className="navigation-item">
-                                <Link to="/catalog">samsung</Link>
+                                <Link to="/products/samsung">samsung</Link>
                             </li>
                             <li className="navigation-item">
-                                <Link to="/catalog">xiaomi</Link>
+                                <Link to="/products/xiaomi">xiaomi</Link>
                             </li>
                             <li className="navigation-item">
-                                <Link to="/catalog">аксессуары</Link>
+                                <Link to="/products/accessory">аксессуары</Link>
                             </li>
                         </ul>
                     </nav>

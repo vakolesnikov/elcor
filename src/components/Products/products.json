@@ -1,0 +1,323 @@
+[
+  {
+    "name":"IPhone 6S",
+    "memory":32,
+    "price":22990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 7",
+    "memory":32,
+    "price":28990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 7",
+    "memory":128,
+    "price":33990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 7+",
+    "memory":32,
+    "price":34990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 7+",
+    "memory":128,
+    "price":39990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 8",
+    "memory":64,
+    "price":36990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 8",
+    "memory":256,
+    "price":43990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 8+",
+    "memory":64,
+    "price":44990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 8+",
+    "memory":256,
+    "price":49990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone X",
+    "memory":64,
+    "price":58990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone X",
+    "memory":256,
+    "price":64990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone XS",
+    "memory":64,
+    "price":64990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone XS",
+    "memory":256,
+    "price":70990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone XS MAX",
+    "memory":64,
+    "price":69990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone XS MAX",
+    "memory":256,
+    "price":75990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone XR",
+    "memory":64,
+    "price":47990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone XR",
+    "memory":128,
+    "price":49990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone XR",
+    "memory":256,
+    "price":59990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 11",
+    "memory":64,
+    "price":58990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 11",
+    "memory":128,
+    "price":63990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 11",
+    "memory":256,
+    "price":73990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 11 Pro",
+    "memory":64,
+    "price":88990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 11 Pro",
+    "memory":256,
+    "price":103990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 11 Pro",
+    "memory":512,
+    "price":121990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 11 Pro Max",
+    "memory":256,
+    "price":109990,
+    "type":"iphone"
+  },
+  {
+    "name":"IPhone 11 Pro Max",
+    "memory":512,
+    "price":124990,
+    "type":"iphone"
+  },
+  {
+    "name":"Apple Watch S3 - 38",
+    "price":16490,
+    "type":"accessory"
+  },
+  {
+    "name":"Apple Watch S3 - 42",
+    "price":18490,
+    "type":"accessory"
+  },
+  {
+    "name":"Apple Watch S4 - 40",
+    "price":27490,
+    "type":"accessory"
+  },
+  {
+    "name":"Apple Watch S4 - 44",
+    "price":28490,
+    "type":"accessory"
+  },
+  {
+    "name":"Apple Watch S5 - 40",
+    "price":33990,
+    "type":"accessory"
+  },
+  {
+    "name":"Apple Watch S5 - 44",
+    "price":35990,
+    "type":"accessory"
+  },
+  {
+    "name":"Poco F1",
+    "memory":"6/64",
+    "price":17990
+  },
+  {
+    "name":"MI 9",
+    "memory":"T 6/64",
+    "price":21990
+  },
+  {
+    "name":"MI 9",
+    "memory":"T 6/128",
+    "price":23990
+  },
+  {
+    "name":"MI 8",
+    "memory":"lite 4/64",
+    "price":13990
+  },
+  {
+    "name":"MI 8",
+    "memory":"lite 6/128",
+    "price":16990
+  },
+  {
+    "name":"MI 9",
+    "memory":"6/64",
+    "price":26990
+  },
+  {
+    "name":"MI 9",
+    "memory":"6/128",
+    "price":28990
+  },
+  {
+    "name":"Note 7",
+    "memory":"3/32",
+    "price":12990
+  },
+  {
+    "name":"Note 7",
+    "memory":"4/64",
+    "price":13990
+  },
+  {
+    "name":"Redmi 7",
+    "memory":"а 2/16",
+    "price":6990
+  },
+  {
+    "name":"Redmi 7",
+    "memory":"а 2/32",
+    "price":7490
+  },
+  {
+    "name":"Redmi GO",
+    "memory":"8/16",
+    "price":5490
+  },
+  {
+    "name":"Redmi 7",
+    "memory":"3/32",
+    "price":10490
+  },
+  {
+    "name":"Redmi 7",
+    "memory":"3/64",
+    "price":11490
+  },
+  {
+    "name":"Samsung A10",
+    "memory":32,
+    "price":9990
+  },
+  {
+    "name":"Samsung A20",
+    "memory":32,
+    "price":12990
+  },
+  {
+    "name":"Samsung А30",
+    "memory":32,
+    "price":13990
+  },
+  {
+    "name":"Samsung А50",
+    "memory":64,
+    "price":16990
+  },
+  {
+    "name":"Samsung А50",
+    "memory":128,
+    "price":19990
+  },
+  {
+    "name":"Samsung A 70",
+    "memory":128,
+    "price":24990
+  },
+  {
+    "name":"Samsung A 80",
+    "memory":128,
+    "price":39990
+  },
+  {
+    "name":"Samsung S10+",
+    "memory":128,
+    "price":59990
+  },
+  {
+    "name":"Samsung S10",
+    "memory":128,
+    "price":54990
+  },
+  {
+    "name":"Samsung S10e",
+    "memory":128,
+    "price":43990
+  },
+  {
+    "name":"Samsung Note10",
+    "memory":256,
+    "price":59990
+  },
+  {
+    "name":"Samsung Note10+",
+    "memory":256,
+    "price":68990
+  },
+  {
+    "name":"Samsung Note10+",
+    "memory":512,
+    "price":74990
+  }
+]

@@ -62,7 +62,7 @@ export default class Main extends React.Component {
                             </div>
                             <div className="nerds-information-product">
                                 <b>Выполняем заказы на разработку :</b>
-                                <ul className="product-list">
+                                <ul className="nerds-product-list">
                                     <li>Наш стиль</li>
                                     <li>Наш скилл</li>
                                     <li>Наша фишка</li>

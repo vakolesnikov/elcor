@@ -1,16 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default ({ title, img }) => (
+const ProductItem = ({ title, price, img }) => (
     <div className="product-item">
-        <header className="product-header">
-            <img src={img} alt="image" />
-        </header>
-        <h2 className="product-title">{title}</h2>
-        <div className="product-text">
-            Мир никогда не будет прежним после того как увидит ваш сайт!
+        <img className="product-item-image" src={img} alt="apple" />
+        <div className="product-item-title">{title}</div>
+        <div className="product-item-panel">
+            <div className="product-item-price">{price} р.</div>
+            <a href="/" className="product-item-buy">
+                Купить
+            </a>
         </div>
-        <a href="/" className="main-button button_mod_left">
-            подобрать
-        </a>
     </div>
 );
+
+ProductItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired
+};
+
+export default ProductItem;
