@@ -6,7 +6,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <header className="main-header">
-                <div className="container">
+                <div className="container main-header-content">
                     <div className="top-navigation-box">
                         <Link to="/" className="main-logo">
                             <div className="main-logo_title">Elcor</div>

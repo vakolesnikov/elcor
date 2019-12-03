@@ -4,6 +4,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    font-family: 'Alatsi', sans-serif;
 }
 
 .clearfix::after{
@@ -47,7 +48,10 @@ body{
 .main-header{
     font-weight: 500;
     font-size: 16px;
-    margin-bottom: 80px;
+}
+
+.main-header-content{
+    padding-bottom: 80px;
 }
 
 .top-navigation-box{
@@ -79,12 +83,17 @@ body{
     margin-right: 20px;
 }
 
+/*.main-logo_image {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    position: fixed;*/
+/*    left: 20px;*/
+/*    top: 20px;*/
+/*}*/
+
 .main-logo_image {
-    width: 200px;
-    height: 200px;
-    position: fixed;
-    left: 20px;
-    top: 20px;
+    width: 55px;
+    height: 55px;
 }
 
 .main-logo_address {
@@ -444,9 +453,8 @@ body{
 .maps{
     width: 100%;
     min-width: 1200px;
-    height: 416px;
-    margin: 0 auto;
-    margin-bottom: 69px;
+    height: 400px;
+    margin: 0 -20px 69px -20px;
     position: relative;
 }
 
