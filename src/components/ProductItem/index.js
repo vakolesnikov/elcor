@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 const ProductItem = ({ title, price, img }) => (
     <div className="product-item">
-        <img className="product-item-image" src={img} alt="apple" />
+        <img
+            className="product-item-image"
+            src="http://elcor.herokuapp.com/assets/apple.jpg"
+            alt="apple"
+        />
         <div className="product-item-title">{title}</div>
         <div className="product-item-panel">
             <div className="product-item-price">{price} р.</div>
