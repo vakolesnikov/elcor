@@ -38,7 +38,8 @@
 }
 
 .product-item-image {
-    width:  340px
+    width:  220px;
+    height: 220px;
 }
 
 .product-item-title {
