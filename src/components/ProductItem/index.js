@@ -5,7 +5,7 @@ const ProductItem = ({ title, prices, images }) => (
     <div className="product-item">
         <img
             className="product-item-image"
-            src={`http://elcor.herokuapp.com/assets/${images[0]}`}
+            src={`http://elcor.herokuapp.com/images/${images[0]}`}
             alt="apple"
         />
         <div className="product-item-title">{title}</div>

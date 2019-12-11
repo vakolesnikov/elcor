@@ -6,7 +6,7 @@ import { HashRouter } from 'react-router-dom';
 import reducer from './reducers';
 
 import View from './components/View';
-import './normalize.css';
+// import './normalize.css';
 
 const store = createStore(reducer);
 

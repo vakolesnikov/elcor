@@ -2,7 +2,6 @@ import React from 'react';
 
 import './index.css';
 import products from './products';
-import appleImg from '../../assets/apple.jpg';
 import ProductItem from '../ProductItem';
 
 const Products = props => {

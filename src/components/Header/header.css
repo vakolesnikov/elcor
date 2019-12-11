@@ -1,0 +1,135 @@
+.main-header{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main-header-content{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 20px 80px;
+}
+
+.top-header-box {
+    padding: 40px 0;
+}
+
+.top-header-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header-container a{
+    display: flex;
+    align-items: center;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.main-logo{
+    display: flex;
+    align-items: baseline;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-logo_title {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #fb565a;
+    margin-right: 10px;
+}
+
+.phone-container {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.phone-number {
+
+}
+
+.phone-icon {
+    width: 30px;
+    color: #fb565a;
+    font-weight: 700;
+}
+
+
+.main-logo_image {
+    width: 55px;
+    height: 55px;
+}
+
+.main-logo_address {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-navigation{
+    height: 60px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+
+.navigation-list{
+    width: 100%;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 15px;
+    justify-content: space-around;
+}
+
+.navigation-item{
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navigation-item a {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.navigation-item:hover{
+    color: #fb565a;
+}
+
+.navigation-item:active{
+    color: #000000;
+    opacity: 0.3;
+}
+
+.navigation-item-active a::after{
+    content: "";
+    display: block;
+    width: inherit;
+    margin-top: 3px;
+    border-top: 2px solid #fb565a;
+}
