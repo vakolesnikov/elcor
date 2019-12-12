@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import styles from '../Products/index.css';
 
+import samsungImg from '../../assets/samsung.jpeg';
+
 const ProductItem = ({ title, prices, images }) => (
     <div className={styles['product-item']}>
         <img
@@ -13,9 +15,20 @@ const ProductItem = ({ title, prices, images }) => (
         <div className={styles['product-item-title']}>{title}</div>
         <div className={styles['product-item-panel']}>
             <div className={styles['product-item-price']}>{prices[0]} р.</div>
-            <a href="/" className={styles['product-item-buy']}>
+            <button type="button" className={styles['product-item-buy']}>
                 Купить
-            </a>
+            </button>
+        </div>
+        <div className={styles['product-card']}>
+            <div className={styles['product-card-content']}>
+                <div className={styles['product-card-information']}>
+                    <h2>{title}</h2>
+                    <img src={samsungImg} alt="samsungImg" />
+                </div>
+                <div className={styles['product-card-options']}>
+                    <h2>{title}</h2>
+                </div>
+            </div>
         </div>
     </div>
 );
