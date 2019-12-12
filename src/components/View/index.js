@@ -4,13 +4,13 @@ import Header from '../Header';
 import Main from '../Main';
 import Products from '../Products';
 import Footer from '../Footer';
-import './index.css';
+import style from './index.css';
 
 export default class View extends React.Component {
     render() {
         return (
-            <div className="main-container">
-                <div className="content">
+            <div className={style['main-container']}>
+                <div className={style.content}>
                     <Header />
                     <Switch>
                         <Route exact path="/" component={Main} />

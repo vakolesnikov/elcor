@@ -1,20 +1,26 @@
 import React from 'react';
+import styles from '../View/index.css';
 
 export default class Footer extends React.Component {
     render() {
         return (
-            <div className="container">
-                <footer className="main-footer">
-                    <div className="social">
-                        <a href="https://vk.com/elcor58" className="social-item social-vk" />
+            <div className={styles.container}>
+                <footer className={styles['main-footer']}>
+                    <div className={styles.social}>
+                        <a
+                            href="https://vk.com/elcor58"
+                            className={`${styles['social-item']} ${styles['social-vk']}`}
+                        />
                         <a
                             href="https://instagram.com/elcor58"
-                            className="social-item social-insta"
+                            className={`${styles['social-item']} ${styles['social-insta']}`}
                         />
                     </div>
-                    <div className="social-box">
-                        <span className="social-title">Давайте дружить, это выгодно!</span>
-                        <span className="social-text">
+                    <div className={styles['social-box']}>
+                        <span className={styles['social-title']}>
+                            Давайте дружить, это выгодно!
+                        </span>
+                        <span className={styles['social-text']}>
                             Скидка 10% для друзей из социальных сетей
                         </span>
                     </div>
