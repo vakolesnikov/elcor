@@ -8,7 +8,7 @@ export default class Map extends React.Component {
             <div className={styles.maps}>
                 <div className={styles.maps_container}>
                     <div className={styles['studio-information']}>
-                        <div className={styles['studio-information-title']}>Elkor</div>
+                        <div className={styles['studio-information-title']}>Eckor</div>
                         <div className={styles.adress}>
                             440000, Пенза,
                             <br />
