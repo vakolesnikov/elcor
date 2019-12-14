@@ -6,7 +6,7 @@ export default class Map extends React.Component {
     render() {
         return (
             <div className={styles.maps}>
-                <div className={styles.maps_container}>
+                <div className={styles['maps-container']}>
                     <div className={styles['studio-information']}>
                         <div className={styles['studio-information-title']}>Elcor</div>
                         <div className={styles.adress}>
@@ -17,7 +17,9 @@ export default class Map extends React.Component {
                         </div>
                         <a href="tel:+79631033030">тел. +7 (963)103-30-30</a>
 
-                        <div className={styles['main-button maps-button']}>напишите нам</div>
+                        <div className={`${styles['main-button']} ${styles['maps-button']}`}>
+                            напишите нам
+                        </div>
                     </div>
                     <iframe
                         title="map"

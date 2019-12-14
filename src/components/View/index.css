@@ -262,7 +262,7 @@
     position: relative;
 }
 
-.maps_container{
+.maps-container{
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -274,7 +274,7 @@
 
 .studio-information{
     width: 320px;
-    height: 307px;
+    height: 210px;
     background-color: white;
     padding: 50px;
     margin: 50px;
