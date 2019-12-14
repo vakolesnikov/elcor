@@ -7,7 +7,8 @@
 
 .product-title {
     width: 100%;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
+    font-size: 40px;
 }
 
 .product-title::after {
@@ -28,7 +29,7 @@
 }
 
 .product-item {
-    width: 380px;
+    width: 340px;
     padding: 20px 20px 40px 20px;
     margin-bottom: 10px;
     display: flex;
@@ -82,7 +83,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #9595951f;
+    background-color: #00000073;
 }
 
 .product-card-content {
@@ -90,7 +91,7 @@
     height: 80%;
     border-radius: 10px;
     background-color: #ffffffff;
-    display: flex;
+    padding: 40px;
 }
 
 .product-card-information {
@@ -98,5 +99,93 @@
 }
 
 .product-card-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex-grow: 1;
+}
+
+.card-options-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #999999;
+    width: 100%;
+    display: flex;
+    align-content: baseline;
+    align-items: center;
+}
+
+.card-close-button {
+    width: 30px;
+    height: 30px;
+    background-color: #fb565a;
+    color: #fff;
+    transform: rotate(-45deg);
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.card-title {
+    padding: 0;
+    margin: 0;
+}
+
+.card-image {
+    width: 400px;
+    height: 300px;
+}
+
+.option-param {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 5px;
+}
+
+.selected-option-param {
+    background-color: #fb565a;
+    color: #fff;
+    border-color: #eeeeee;
+}
+
+.options-title {
+    margin-right: 10px;
+}
+
+.price-value {
+    font-size: 28px;
+}
+
+.main-product-information {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.description-tabs {
+    list-style: none;
+    display: flex;
+}
+
+.description-tab {
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #eeeeee;
+}
+
+.description-tab-active {
+    background-color: #fb565a;
+    color: #fff;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.description-item {
+    padding: 10px;
 }
