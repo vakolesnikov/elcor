@@ -18,7 +18,7 @@ class ProductItem extends React.Component {
 
     renderCard = () => {
         const { name, options, prices, images } = this.props;
-        const { selectedMainOptionIndex } = this.state;
+        const { selectedMainOptionIndex, openServiceTab } = this.state;
 
         return (
             <div className={styles['product-card']}>
@@ -72,20 +72,28 @@ class ProductItem extends React.Component {
                         <div className={styles['service-tabs']}>
                             <li
                                 className={`${styles['service-tab']} ${
-                                    styles['service-tab-active']
+                                    openServiceTab === 'description'
+                                        ? styles['service-tab-active']
+                                        : ''
                                 }`}
                                 onClick={() => this.setState({ openServiceTab: 'description' })}
                             >
                                 Описание
                             </li>
                             <li
-                                className={styles['service-tab']}
+                                className={`${styles['service-tab']} ${
+                                    openServiceTab === 'delivery'
+                                        ? styles['service-tab-active']
+                                        : ''
+                                }`}
                                 onClick={() => this.setState({ openServiceTab: 'delivery' })}
                             >
                                 Доставка
                             </li>
                             <li
-                                className={styles['service-tab']}
+                                className={`${styles['service-tab']} ${
+                                    openServiceTab === 'payment' ? styles['service-tab-active'] : ''
+                                }`}
                                 onClick={() => this.setState({ openServiceTab: 'payment' })}
                             >
                                 Оплата
