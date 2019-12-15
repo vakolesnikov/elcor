@@ -92,17 +92,24 @@
     border-radius: 10px;
     background-color: #ffffffff;
     padding: 40px;
+    position: relative;
+    overflow: auto;
 }
 
 .product-card-information {
-    flex-grow: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 
 .product-card-options {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-grow: 1;
+    width: 50%;
 }
 
 .card-options-item {
@@ -115,15 +122,17 @@
 }
 
 .card-close-button {
-    width: 30px;
-    height: 30px;
-    background-color: #fb565a;
-    color: #fff;
-    transform: rotate(-45deg);
+    background-color: transparent;
     border: none;
-    border-radius: 50%;
     outline: none;
     cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.card-close-button span {
+    color: #fb565a;
 }
 
 .card-title {
@@ -132,8 +141,12 @@
 }
 
 .card-image {
-    width: 400px;
+    width: 280px;
     height: 300px;
+}
+
+.card-image img {
+    width: 100%;
 }
 
 .option-param {
@@ -141,6 +154,9 @@
     border-radius: 5px;
     border: 1px solid #000000;
     margin: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    outline: none;
 }
 
 .selected-option-param {
@@ -163,19 +179,22 @@
     position: relative;
 }
 
-.description-tabs {
+.service-tabs {
     list-style: none;
     display: flex;
+    margin-bottom: 20px;
 }
 
-.description-tab {
+.service-tab {
     width: 100px;
     padding: 10px;
     margin: 5px;
     background-color: #eeeeee;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.description-tab-active {
+.service-tab-active {
     background-color: #fb565a;
     color: #fff;
 }
@@ -188,4 +207,26 @@
 
 .description-item {
     padding: 10px;
+}
+
+.delivery-information {
+    text-align: left;
+}
+
+.delivery-information-item {
+    padding: 20px 0;
+}
+
+.delivery-information b {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.service-item {
+    display: none;
+}
+
+.service-item-visible {
+    text-align: left;
+    display: block;
 }
