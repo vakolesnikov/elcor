@@ -323,28 +323,29 @@
 .social{
     width: 399px;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .social-item{
     display: block;
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    /*border-radius: 40px;*/
     line-height: 85px;
     text-align: center;
-    background-color: #e74246
+    /*background-color: #e74246*/
+    background-size: 75%;
 }
 
 .social-vk{
-    background-image: url("../../assets/vk-icon.png");
+    background-image: url("../../assets/vk.png");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .social-insta{
-    background-image: url("../../assets/insta-icon.png");
+    background-image: url("../../assets/insta.png");
     background-position: center;
     background-repeat: no-repeat;
 }
