@@ -21,7 +21,7 @@ export default class Footer extends React.Component {
                             Давайте дружить, это выгодно!
                         </span>
                         <span className={styles['social-text']}>
-                            Скидка 10% для друзей из социальных сетей
+                            Скидка до 10% для друзей из социальных сетей
                         </span>
                     </div>
                 </footer>

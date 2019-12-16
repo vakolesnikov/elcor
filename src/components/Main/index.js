@@ -46,7 +46,7 @@ export default class Main extends React.Component {
                                 Работаем не покладая рук.
                             </div>
                             <div className={styles['nerds-information-product']}>
-                                <b>Выполняем заказы на разработку :</b>
+                                <b>При покупке любого товара :</b>
                                 <ul className={styles['nerds-product-list']}>
                                     <li>Рассрочка 1% в месяц</li>
                                     <li>Гарантия (30 дней на Б/У - 1 год на новый)</li>

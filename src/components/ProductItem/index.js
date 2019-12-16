@@ -5,6 +5,11 @@ import styles from '../Products/index.css';
 
 import samsungImg from '../../assets/samsung.jpeg';
 
+const OPTION_NAMES = {
+    memory: 'Память',
+    size: 'Размер'
+};
+
 class ProductItem extends React.Component {
     constructor() {
         super();
@@ -19,7 +24,7 @@ class ProductItem extends React.Component {
     renderCard = () => {
         const { name, options, prices, images } = this.props;
         const { selectedMainOptionIndex, openServiceTab } = this.state;
-
+        const nameOption = Object.keys(options)[0];
         return (
             <div className={styles['product-card']}>
                 <div className={styles['product-card-content']}>
@@ -35,8 +40,10 @@ class ProductItem extends React.Component {
                         </div>
                         <div className={styles['product-card-options']}>
                             <div className={styles['card-options-item']}>
-                                <span className={styles['options-title']}>Накопитель:</span>
-                                {options.memory.map((value, index) => (
+                                <span className={styles['options-title']}>
+                                    {OPTION_NAMES[nameOption]}:
+                                </span>
+                                {options[nameOption].map((value, index) => (
                                     <button
                                         type="button"
                                         className={`${styles['option-param']} ${

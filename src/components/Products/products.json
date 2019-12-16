@@ -122,7 +122,7 @@
     "name":"Apple Watch S3",
     "type": "accessory",
     "options": {
-      "display": [38, 42]
+      "size": [38, 42]
     },
     "prices":[16490, 18490],
     "images": ["Apple_Watch_S3.jpg"]
@@ -131,7 +131,7 @@
     "name":"Apple Watch S4",
     "type": "accessory",
     "options": {
-      "display": [40, 44]
+      "size": [40, 44]
     },
     "prices":[27490, 28490],
     "images": ["Apple_Watch_S4.jpg"]
@@ -140,7 +140,7 @@
     "name":"Apple Watch S5",
     "type": "accessory",
     "options": {
-      "display": [40, 44]
+      "size": [40, 44]
     },
     "prices":[33990, 35990],
     "images": ["Apple_Watch_S5.jpg"]

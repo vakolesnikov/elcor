@@ -274,7 +274,6 @@
 
 .studio-information{
     width: 320px;
-    height: 210px;
     background-color: white;
     padding: 50px;
     margin: 50px;
@@ -352,6 +351,7 @@
 
 .social-box{
     padding-top: 3px;
+    text-align: center;
 }
 
 .social-title{
