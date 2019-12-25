@@ -28,7 +28,7 @@ export default class Header extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        <div className={styles['top-header-container']}>
+                        <div className={`${styles['top-header-container']} ${styles['location-information']}`}>
                             <span className={styles['main-logo_address']}>ТЦ "ЦУМ", 1й этаж</span>
 
                             <span className={styles['work-time']}>
