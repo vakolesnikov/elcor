@@ -5,7 +5,7 @@
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
     background-color: #fff;
@@ -21,8 +21,14 @@
             no-repeat
             fixed
             rgba(250,250,250, 1)
-    /*url("../../assets/elcorBg.png")*/
 }
+
+
+.main {
+    padding-bottom: 70px;
+}
+
+
 
 .main-container::before {
     content: '';
@@ -36,24 +42,6 @@
     background-color: #fff;
 }
 
-.main-container .content {
-    position: relative;
-    z-index: 2;
-}
-
-
-
-/*.main-logo_image {*/
-/*    width: 200px;*/
-/*    height: 200px;*/
-/*    position: fixed;*/
-/*    left: 20px;*/
-/*    top: 20px;*/
-/*}*/
-
-
-
-
 .main-banner{
     position: relative;
     margin-bottom: 60px;
@@ -63,11 +51,12 @@
     height: 430px;
     padding-right: 10px;
     background: url("../../assets/slide1.png") no-repeat;
-    background-position: 430px 19px;
+    background-position: right 19px;
+    /*background-size: 60%;*/
 }
 
 .main-banner-information{
-    width: 560px;
+    width: 500px;
 }
 
 .main-banner-title{
@@ -251,7 +240,7 @@
     color: black;
 }
 
-.advantages-item span sup{
+.advantages-item sup{
     font-size: 28px;
 }
 
@@ -313,57 +302,144 @@
     margin-top: 89px
 }
 
-.main-footer{
-    display: flex;
-    padding-bottom: 50px;
+@media (max-width: 1200px) {
+    .main-banner-item{
+        background-size: 50%;
+    }
+
+    .main-banner-title {
+        font-size: 35px;
+    }
 }
 
-.social{
-    width: 399px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+@media (max-width: 940px) {
+    .main-banner-information {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-banner-information a {
+        position: relative;
+    }
+
+    .main-banner-title {
+        position: relative;
+        padding: 0;
+        line-height: 30px;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 15px 0;
+    }
+
+    .main-banner-background {
+        /*content: '';*/
+        /*display: block;*/
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        background: url("../../assets/slide1.png") no-repeat;
+        opacity: .3;
+    }
+
+    .main-banner-item{
+        background: none;
+        height: auto;
+        padding-right: 0;
+    }
+
+    .main-button {
+        font-size: 14px;
+        line-height: 14px;
+        width: 200px;
+    }
+
+    .studio-information {
+        display: none;
+    }
+
+    .nerds-information {
+        flex-direction: column;
+    }
+
+    .information-box {
+        width: auto;
+    }
+
+    .nerds-information-title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .nerds-information-text {
+        font-style: italic;
+    }
+
+    .advantages {
+        width: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
-.social-item{
-    display: block;
-    width: 60px;
-    height: 60px;
-    /*border-radius: 40px;*/
-    line-height: 85px;
-    text-align: center;
-    /*background-color: #e74246*/
-    background-size: 75%;
+@media (max-width: 640px) {
+    .advantages {
+        flex-direction: column;
+    }
+
+    .advantages-box {
+        width: 100%;
+    }
+
+    .advantages-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .advantages-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .advantages-item {
+        margin: 0;
+    }
 }
 
-.social-vk{
-    background-image: url("../../assets/vk.png");
-    background-position: center;
-    background-repeat: no-repeat;
-}
+@media (max-width: 480px) {
+    .main {
+        padding-bottom: 20px;
+    }
 
-.social-insta{
-    background-image: url("../../assets/insta.png");
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .main-banner {
+        margin-bottom: 20px;
+    }
 
-.social-box{
-    padding-top: 3px;
-    text-align: center;
-}
+    .main-banner-title {
+        font-size: 25px;
+    }
 
-.social-title{
-    display: block;
-    margin-bottom: 9px;
-    font-weight: 700;
-    font-size: 36px;
-}
+    .advantages-item span {
+        font-size: 35px;
+    }
 
-.social-text{
-    display: block;
-    font-weight: 400;
-    color: #283136;
-    font-size: 16px;
-    line-height: 22px;
+    .advantages-item sup {
+        font-size: 20px;
+    }
+
+    .advantages-item {
+        font-size: 14px;
+    }
+
+    .nerds-information-title {
+        font-size: 25px;
+        font-weight: 700;
+    }
 }

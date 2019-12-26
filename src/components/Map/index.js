@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../View/index.css';
+import styles from '../Main/index.css';
 
 export default class Map extends React.Component {
     render() {
@@ -25,7 +25,6 @@ export default class Map extends React.Component {
                         title="map"
                         className={styles.map}
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab43e95893f62db9a4383483d248223f81c357e5642e5bfe6dd2653df96469123&amp;source=constructor"
-                        width="1200"
                         height="400"
                         frameBorder="0"
                     />

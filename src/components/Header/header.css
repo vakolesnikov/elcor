@@ -135,6 +135,10 @@
 }
 
 @media (max-width: 940px) {
+    .top-header-box {
+        padding: 20px 0;
+    }
+
     .main-logo_title {
         font-size: 30px;
     }
@@ -179,6 +183,10 @@
 }
 
 @media (max-width: 480px) {
+    .main-header-content {
+        padding-bottom: 40px;
+    }
+
     .phone-icon {
         color: #000000;
     }
