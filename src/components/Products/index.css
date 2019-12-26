@@ -245,4 +245,19 @@
         width: 100%;
         margin-bottom: 40px;
     }
+
+    .product-card-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .service-tab {
+        width: 80px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .service-item {
+        font-size: 12px;
+    }
 }
