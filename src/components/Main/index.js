@@ -42,7 +42,7 @@ export default class Main extends React.Component {
                             <div className={styles['nerds-information-text']}>
                                 "Ставим счастье и радость клиента превыше собственной выгоды.
                                 <br />
-                                Работаем не покладая рук."
+                                Работаем для вас не покладая рук."
                             </div>
                             <div className={styles['nerds-information-product']}>
                                 <b>ПРИ ПОКУПКЕ ЛЮБОГО ТОВАРА :</b>

@@ -1,7 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import elcorLogo from '../../assets/elcor-logo.png';
+
+import apple from '../../assets/apple-tab.png';
+import samsung from '../../assets/samsung-tab.png';
+import xiaomi from '../../assets/xiaomi-tab.png';
+import accessory from '../../assets/accessory-tab.png';
+
 import styles from './header.css';
+
+const tabImages = { apple, samsung, xiaomi, accessory };
+
+const tabs = [
+    {
+        type: 'apple',
+        name: 'apple'
+    },
+    {
+        type: 'samsung',
+        name: 'samsung'
+    },
+    {
+        type: 'xiaomi',
+        name: 'xiaomi'
+    },
+    {
+        type: 'accessory',
+        name: 'аксессуары'
+    }
+];
 
 export default class Header extends React.Component {
     render() {
@@ -28,7 +55,11 @@ export default class Header extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        <div className={`${styles['top-header-container']} ${styles['location-information']}`}>
+                        <div
+                            className={`${styles['top-header-container']} ${
+                                styles['location-information']
+                            }`}
+                        >
                             <span className={styles['main-logo_address']}>ТЦ "ЦУМ", 1й этаж</span>
 
                             <span className={styles['work-time']}>
@@ -39,18 +70,24 @@ export default class Header extends React.Component {
 
                     <nav className={styles['main-navigation']}>
                         <ul className={styles['navigation-list']}>
-                            <li className={styles['navigation-item']}>
-                                <Link to="/products/apple">apple</Link>
-                            </li>
-                            <li className={styles['navigation-item']}>
-                                <Link to="/products/samsung">samsung</Link>
-                            </li>
-                            <li className={styles['navigation-item']}>
-                                <Link to="/products/xiaomi">xiaomi</Link>
-                            </li>
-                            <li className={styles['navigation-item']}>
-                                <Link to="/products/accessory">аксессуары</Link>
-                            </li>
+                            {tabs.map(tab => (
+                                <li className={styles['navigation-item']} key={tab.type}>
+                                    <Link to={`/products/${tab.type}`}>
+                                        <div
+                                            className={styles['desktop-navigation-item-container']}
+                                        >
+                                            {tab.name}
+                                        </div>
+                                        <div className={styles['mobile-navigation-item-container']}>
+                                            <img
+                                                src={tabImages[tab.type]}
+                                                alt="img"
+                                                className={styles['mobile-navigation-image']}
+                                            />
+                                        </div>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </nav>
                 </div>

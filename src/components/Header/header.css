@@ -134,18 +134,22 @@
     border-top: 2px solid #893810;
 }
 
+.mobile-navigation-item-container {
+    display: none;
+}
+
+.mobile-navigation-image {
+
+}
+
 @media (max-width: 940px) {
     .top-header-box {
         padding: 20px 0;
     }
 
-    .main-logo_title {
-        font-size: 30px;
-    }
-
     .main-logo_image {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     .phone-container {
@@ -169,8 +173,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 48%;
-        height: 50px;
+        width: 22%;
+        height: 120px;
         background-color: #eeeeee;
         margin: 2px;
         text-align: center;
@@ -180,9 +184,26 @@
     .navigation-item a {
         color: #000000;
     }
+
+    .mobile-navigation-item-container {
+        display: block;
+        width: 100px;
+    }
+
+    .mobile-navigation-image {
+        width: 100%;
+    }
+
+    .desktop-navigation-item-container {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
+    .main-logo_title {
+        font-size: 45px;
+    }
+
     .main-header-content {
         padding-bottom: 40px;
     }
