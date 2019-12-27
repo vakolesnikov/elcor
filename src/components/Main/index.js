@@ -28,7 +28,7 @@ export default class Main extends React.Component {
                                 <h2 className={styles['main-banner-title']}>
                                     Оригинальная техника по выгодным ценам
                                 </h2>
-                                <Link to="/catalog">
+                                <Link to="/products/all">
                                     <span className={styles['main-button']}>Перейти в магазин</span>
                                 </Link>
                             </section>

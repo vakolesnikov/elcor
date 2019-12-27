@@ -69,9 +69,13 @@ class ProductItem extends React.Component {
                             </div>
 
                             <div className={styles['card-options-item']}>
-                                <button type="button" className={styles['product-item-buy']}>
+                                <a
+                                    href="tel:+79631033030"
+                                    type="button"
+                                    className={styles['product-item-buy']}
+                                >
                                     Купить
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

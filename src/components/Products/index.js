@@ -13,17 +13,19 @@ const pageTitles = {
 
 const Products = props => {
     const { id: currentProduct } = props.match.params;
+    const isAll = currentProduct === 'all';
+    const selectedProduct = isAll
+        ? products
+        : products.filter(item => item.type === currentProduct);
 
     return (
         <div className={styles['product-container']}>
             <h2 className={styles['product-title']}>{pageTitles[currentProduct]}</h2>
             <div className={styles['product-custom-settings']}>Сортировка: по умолчанию</div>
             <div className={styles['product-list']}>
-                {products
-                    .filter(item => item.type === currentProduct)
-                    .map((product, index) => {
-                        return <ProductItem {...product} key={`${product.name}${index}`} />;
-                    })}
+                {selectedProduct.map((product, index) => {
+                    return <ProductItem {...product} key={`${product.name}${index}`} />;
+                })}
             </div>
         </div>
     );
