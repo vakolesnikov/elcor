@@ -37,7 +37,7 @@ class ProductItem extends React.Component {
                             <h2 className={styles['card-title']}>{name}</h2>
                             <div className={styles['card-image']}>
                                 <img
-                                    src={`http://elcor.herokuapp.com/images/${images[0]}`}
+                                    src={`http://127.0.0.1/images/${images[0]}`}
                                     alt="samsungImg"
                                 />
                             </div>
@@ -78,7 +78,7 @@ class ProductItem extends React.Component {
                                     type="button"
                                     className={styles['product-item-buy']}
                                 >
-                                    Купить
+                                    Связаться
                                 </a>
                             </div>
                         </div>
@@ -201,11 +201,14 @@ class ProductItem extends React.Component {
 
         return (
             <div className={styles['product-item']}>
-                <img
-                    className={styles['product-item-image']}
-                    src={`http://elcor.herokuapp.com/images/${images[0]}`}
-                    alt="apple"
-                />
+                <div className={styles['product-image-container']}>
+                    <img
+                        className={styles['product-item-image']}
+                        src={`http://127.0.0.1/images/${images[0]}`}
+                        alt="apple"
+                    />
+                </div>
+
                 <div className={styles['product-item-title']}>{name}</div>
                 <div className={styles['product-item-panel']}>
                     <div className={styles['product-item-price']}>{prices[0]} р.</div>
@@ -214,7 +217,7 @@ class ProductItem extends React.Component {
                         className={styles['product-item-buy']}
                         onClick={() => this.setState({ isOpenCard: true })}
                     >
-                        Купить
+                        Подробнее
                     </button>
                 </div>
                 {isOpenCard && this.renderCard()}

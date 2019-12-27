@@ -11,7 +11,7 @@
       21990
     ],
     "images": [
-      "6s.jpg"
+      "iphone_6s_rose_gold.jpg"
     ],
     "description": [
       "экран 4.7 (11.8 см) ",
@@ -36,7 +36,7 @@
       32990
     ],
     "images": [
-      "7.jpg"
+      "iphone_7_black.jpg"
     ],
     "description": [
       "экран 4.7 (11.8 см) ",
@@ -61,7 +61,7 @@
       36990
     ],
     "images": [
-      "7+.jpg"
+      "iphone_7_plus_red.jpg"
     ],
     "description": [
       "экран 5.5 (14 см)",
@@ -88,7 +88,7 @@
       40990
     ],
     "images": [
-      "8.jpg"
+      "iphone_8_gold.jpg"
     ],
     "description": [
       "4.7 (11.8 см)",
@@ -115,7 +115,7 @@
       44990
     ],
     "images": [
-      "8+.jpg"
+      "iphone_8_plus_silver.jpg"
     ],
     "description": [
       "5.5(14 см)",
@@ -140,7 +140,7 @@
       63990
     ],
     "images": [
-      "iphone_x_silver.jpg"
+      "iphone_x_space_gray.jpg"
     ],
     "description": [
       "5.8 (14.5 см), Super Retina HD (OLED) ",
@@ -165,7 +165,7 @@
       64990
     ],
     "images": [
-      "xs.jpg"
+      "iphone_xs_gold.jpg"
     ],
     "description": [
       "5.8 (14.5 см), Super Retina HD (OLED) ",
@@ -190,7 +190,7 @@
       69990
     ],
     "images": [
-      "xs_max.jpg"
+      "iphone_xs_max_space_gray.jpg"
     ],
     "description": [
       "экран 6.5(16.5 см), OLED Super Retina HD",
@@ -217,7 +217,7 @@
       57990
     ],
     "images": [
-      "xr.jpg"
+      "iphone_xr_coral.jpg"
     ],
     "description": [
       "экран 6.1 (15.3 см), безрамочный IPS Liquid Retina HD",
@@ -244,7 +244,7 @@
       68990
     ],
     "images": [
-      "11.jpg"
+      "iphone_11_purple.jpg"
     ],
     "description": [
       "экран 6.1 (15.3 см), безрамочный IPS Liquid Retina HD",
@@ -271,7 +271,7 @@
       99990
     ],
     "images": [
-      "11_pro.jpg"
+      "iphone_11_pro_midnight_green.jpg"
     ],
     "description": [
       "экран 5.8 (14.5 см), OLED, Super Retina XDR",
@@ -296,7 +296,7 @@
       124990
     ],
     "images": [
-      "iphone_11_pro_max.jpg"
+      "iphone_11_pro_max_gold.jpg"
     ],
     "description": [
       "экран 6.5 (16.5 см), OLED, Super Retina XDR",
@@ -305,57 +305,6 @@
       "объем оперативной памяти 6 Гб",
       "аккумулятор 3500 мАh",
       "вес 226 г, ШxВxГ 158 х 77.8 х 8.1 мм "
-    ]
-  },
-  {
-    "name": "Apple Watch S3",
-    "type": "accessory",
-    "options": {
-      "display": [
-        38,
-        42
-      ]
-    },
-    "prices": [
-      16490,
-      18490
-    ],
-    "images": [
-      "Apple_Watch_S3.jpg"
-    ]
-  },
-  {
-    "name": "Apple Watch S4",
-    "type": "accessory",
-    "options": {
-      "display": [
-        40,
-        44
-      ]
-    },
-    "prices": [
-      27490,
-      28490
-    ],
-    "images": [
-      "Apple_Watch_S4.jpg"
-    ]
-  },
-  {
-    "name": "Apple Watch S5",
-    "type": "accessory",
-    "options": {
-      "display": [
-        40,
-        44
-      ]
-    },
-    "prices": [
-      33990,
-      35990
-    ],
-    "images": [
-      "Apple_Watch_S5.jpg"
     ]
   }
 ]

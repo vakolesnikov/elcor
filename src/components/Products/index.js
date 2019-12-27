@@ -21,7 +21,6 @@ const Products = props => {
     return (
         <div className={styles['product-container']}>
             <h2 className={styles['product-title']}>{pageTitles[currentProduct]}</h2>
-            <div className={styles['product-custom-settings']}>Сортировка: по умолчанию</div>
             <div className={styles['product-list']}>
                 {selectedProduct.map((product, index) => {
                     return <ProductItem {...product} key={`${product.name}${index}`} />;
