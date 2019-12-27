@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     font-size: 50px;
-    color: #fb565a;
+    color: #893810;
     margin-right: 10px;
 }
 
@@ -58,7 +58,7 @@
 
 .phone-icon {
     width: 30px;
-    color: #fb565a;
+    color: #893810;
     font-weight: 700;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .navigation-item:hover{
-    color: #fb565a;
+    color: #893810;
 }
 
 .navigation-item:active{
@@ -131,7 +131,7 @@
     display: block;
     width: inherit;
     margin-top: 3px;
-    border-top: 2px solid #fb565a;
+    border-top: 2px solid #893810;
 }
 
 @media (max-width: 940px) {

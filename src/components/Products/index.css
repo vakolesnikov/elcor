@@ -56,11 +56,14 @@
 }
 
 .product-item-buy {
-    background-color: #fb565a;
+    background-color: #893810;
     color: #fff;
     width: 120px;
     height: 40px;
     text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
     line-height: 40px;
     border: none;
     border-radius: 20px;
@@ -133,7 +136,7 @@
 }
 
 .card-close-button span {
-    color: #fb565a;
+    color: #893810;
 }
 
 .card-title {
@@ -163,7 +166,7 @@
 }
 
 .selected-option-param {
-    background-color: #fb565a;
+    background-color: #893810;
     color: #fff;
     border-color: #eeeeee;
 }
@@ -198,7 +201,7 @@
 }
 
 .service-tab-active {
-    background-color: #fb565a;
+    background-color: #893810;
     color: #fff;
 }
 
