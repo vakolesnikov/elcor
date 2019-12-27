@@ -3,12 +3,16 @@ import PropTypes from 'prop-types';
 
 import styles from '../Products/index.css';
 
-import samsungImg from '../../assets/samsung.jpeg';
-
 const OPTION_NAMES = {
     memory: 'Память',
     size: 'Размер'
 };
+
+const SERVICE_TABS = [
+    { name: 'description', title: 'описание' },
+    { name: 'delivery', title: 'доставка' },
+    { name: 'payment', title: 'оплата' }
+];
 
 class ProductItem extends React.Component {
     constructor() {
@@ -81,34 +85,19 @@ class ProductItem extends React.Component {
                     </div>
                     <div className={styles['product-service-information']}>
                         <div className={styles['service-tabs']}>
-                            <li
-                                className={`${styles['service-tab']} ${
-                                    openServiceTab === 'description'
-                                        ? styles['service-tab-active']
-                                        : ''
-                                }`}
-                                onClick={() => this.setState({ openServiceTab: 'description' })}
-                            >
-                                Описание
-                            </li>
-                            <li
-                                className={`${styles['service-tab']} ${
-                                    openServiceTab === 'delivery'
-                                        ? styles['service-tab-active']
-                                        : ''
-                                }`}
-                                onClick={() => this.setState({ openServiceTab: 'delivery' })}
-                            >
-                                Доставка
-                            </li>
-                            <li
-                                className={`${styles['service-tab']} ${
-                                    openServiceTab === 'payment' ? styles['service-tab-active'] : ''
-                                }`}
-                                onClick={() => this.setState({ openServiceTab: 'payment' })}
-                            >
-                                Оплата
-                            </li>
+                            {SERVICE_TABS.map(tab => (
+                                <li
+                                    key={tab.name}
+                                    className={`${styles['service-tab']} ${
+                                        openServiceTab === tab.name
+                                            ? styles['service-tab-active']
+                                            : ''
+                                    }`}
+                                    onClick={() => this.setState({ openServiceTab: tab.name })}
+                                >
+                                    {tab.title}
+                                </li>
+                            ))}
                         </div>
 
                         {this.renderDescriptionContent()}

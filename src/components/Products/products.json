@@ -1,276 +1,361 @@
 [
   {
-    "name":"IPhone 6S",
-    "type": "apple",
-    "options" : {
-      "memory": [32]
-    },
-    "prices": [22900],
-    "images": ["iphone_6S_gold.jpg"]
-  },
-  {
-    "name":"IPhone 7",
+    "name": "IPhone 6S",
     "type": "apple",
     "options": {
-      "memory": [32, 128]
+      "memory": [
+        32
+      ]
     },
-    "prices":[28990, 33990],
-    "images": ["iphone_7_black.jpg"],
+    "prices": [
+      21990
+    ],
+    "images": [
+      "6s.jpg"
+    ],
     "description": [
-      "смартфон с iOS 10",
-      "экран 4.7', разрешение 1334x750",
-      "камера 12 МП, автофокус",
-      "память 32 Гб, без слота для карт памяти",
+      "экран 4.7 (11.8 см) ",
+      "камера 12 МП, 3840x2160 Пикс (Ultra HD 4K)",
       "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
-      "объем оперативной памяти 2 Гб",
-      "аккумулятор 1960 мА⋅ч",
-      "вес 138 г, ШxВxТ 67.10x138.30x7.10 мм"
+      "объем оперативной памяти 1 Гб",
+      "аккумулятор 1960 мАh",
+      "вес 143 г, ШxВxГ 139 х 67 х 7 мм"
     ]
   },
   {
-    "name":"IPhone 7+",
+    "name": "IPhone 7",
     "type": "apple",
     "options": {
-      "memory": [32, 128]
+      "memory": [
+        32,
+        128
+      ]
     },
-    "prices":[34990, 39990],
-    "images": ["iphone_7_plus_red.jpg"]
+    "prices": [
+      25990,
+      32990
+    ],
+    "images": [
+      "7.jpg"
+    ],
+    "description": [
+      "экран 4.7 (11.8 см) ",
+      "камера 12 МП, 3840x2160px (Ultra HD 4K) ",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 2 Гб",
+      "аккумулятор 1960 мАh",
+      "вес 138 г, ШxВxГ 138 х 67 х 7 мм"
+    ]
   },
   {
-    "name":"IPhone 8",
+    "name": "IPhone 7 Plus",
     "type": "apple",
     "options": {
-      "memory": [64, 256]
+      "memory": [
+        32,
+        128
+      ]
     },
-    "prices":[36990, 43990],
-    "images": ["iphone_8_black.jpg"]
+    "prices": [
+      33990,
+      36990
+    ],
+    "images": [
+      "7+.jpg"
+    ],
+    "description": [
+      "экран 5.5 (14 см)",
+      "12+12 МПикс (двойная),3840x2160 Пикс (Ultra HD 4K) ",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 3 Гб",
+      "аккумулятор 2900 мАh",
+      "вес 158 г, ШxВxГ 158 х 78 х 7 мм "
+    ]
   },
   {
-    "name":"IPhone 8+",
+    "name": "IPhone 8",
     "type": "apple",
     "options": {
-      "memory": [64, 256]
+      "memory": [
+        64,
+        128,
+        256
+      ]
     },
-    "prices":[44990, 49990],
-    "images": ["iphone_8_plus_white.jpg"]
+    "prices": [
+      34990,
+      38990,
+      40990
+    ],
+    "images": [
+      "8.jpg"
+    ],
+    "description": [
+      "4.7 (11.8 см)",
+      "камера 12 МП, 3840x2160 Пикс (Ultra HD 4K)",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 2 Гб",
+      "аккумулятор 1820 мАh",
+      "вес 148 г, ШxВxГ 138.4 х 67.3 х 7.3 мм "
+    ]
   },
   {
-    "name":"IPhone X",
+    "name": "IPhone 8+",
     "type": "apple",
     "options": {
-      "memory": [64, 256]
+      "memory": [
+        64,
+        128,
+        256
+      ]
     },
-    "prices":[58990, 64990],
-    "images": ["iphone_x_silver.jpg"]
+    "prices": [
+      40990,
+      42990,
+      44990
+    ],
+    "images": [
+      "8+.jpg"
+    ],
+    "description": [
+      "5.5(14 см)",
+      "камера 12+12 МПикс (двойная), 3840x2160 Пикс (Ultra HD 4K)",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 3 Гб",
+      "аккумулятор 2690 мАh",
+      "вес 202 г, ШxВxГ 158.4 x 78.1 x 7.5 мм  "
+    ]
   },
   {
-    "name":"IPhone XS",
+    "name": "IPhone X",
     "type": "apple",
     "options": {
-      "memory": [64, 256]
+      "memory": [
+        64,
+        256
+      ]
     },
-    "prices":[64990, 70990],
-    "images": ["iphone_xs_silver.jpg"]
+    "prices": [
+      52990,
+      63990
+    ],
+    "images": [
+      "iphone_x_silver.jpg"
+    ],
+    "description": [
+      "5.8 (14.5 см), Super Retina HD (OLED) ",
+      "камера 12МП + 12 (двойная), 3840x2160 Пикс (Ultra HD 4K)",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 4 Гб",
+      "аккумулятор 2700 мАh",
+      "вес 174 г, ШxВxГ 143.6 х 70.9 х 7.7 мм "
+    ]
   },
   {
-    "name":"IPhone XS MAX",
+    "name": "IPhone XS",
     "type": "apple",
     "options": {
-      "memory": [64, 256]
+      "memory": [
+        64,
+        256
+      ]
     },
-    "prices":[69990, 75990],
-    "images": ["iphone_xs_max.jpg"]
+    "prices": [
+      54990,
+      64990
+    ],
+    "images": [
+      "xs.jpg"
+    ],
+    "description": [
+      "5.8 (14.5 см), Super Retina HD (OLED) ",
+      "камера 12МП + 12 (двойная), 3840x2160px (4K)",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 4 Гб",
+      "аккумулятор 2650 мАh",
+      "вес 177 г, ШxВxГ 143.6 х 70.9 х 7.7 мм "
+    ]
   },
   {
-    "name":"IPhone XR",
+    "name": "IPhone XS MAX",
     "type": "apple",
     "options": {
-      "memory": [64, 128, 256]
+      "memory": [
+        64,
+        256
+      ]
     },
-    "prices":[47990, 49990, 59990],
-    "images": ["iphone_xr_yellow.jpg"]
+    "prices": [
+      61990,
+      69990
+    ],
+    "images": [
+      "xs_max.jpg"
+    ],
+    "description": [
+      "экран 6.5(16.5 см), OLED Super Retina HD",
+      "камера 12МП + 12 (двойная), 3840x2160px (4K) ",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 4 Гб",
+      "аккумулятор 3170 мАh",
+      "вес 208 г, ШxВxГ 157.5 х 77.4 х 7.7 мм "
+    ]
   },
   {
-    "name":"IPhone 11",
+    "name": "IPhone XR",
     "type": "apple",
     "options": {
-      "memory": [64, 128, 256]
+      "memory": [
+        64,
+        128,
+        256
+      ]
     },
-    "prices":[58990, 63990, 73990],
-    "images": ["iphone_11_purple.jpg"]
+    "prices": [
+      44990,
+      47990,
+      57990
+    ],
+    "images": [
+      "xr.jpg"
+    ],
+    "description": [
+      "экран 6.1 (15.3 см), безрамочный IPS Liquid Retina HD",
+      "камера 12МП, 3840x2160px (4K) ",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 3 Гб",
+      "аккумулятор 2950 мАh",
+      "вес 208 г, ШxВxГ 150.9 х 75.7 х 8.3 мм "
+    ]
   },
   {
-    "name":"IPhone 11 Pro",
+    "name": "IPhone 11",
     "type": "apple",
     "options": {
-      "memory": [64, 256, 512]
+      "memory": [
+        64,
+        128,
+        256
+      ]
     },
-    "prices":[89990, 103990, 121990],
-    "images": ["iphone_11_pro.jpg"]
+    "prices": [
+      54990,
+      58990,
+      68990
+    ],
+    "images": [
+      "11.jpg"
+    ],
+    "description": [
+      "экран 6.1 (15.3 см), безрамочный IPS Liquid Retina HD",
+      "камера 12МП + 12 (двойная), 3840x2160px (4K) ",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 4 Гб",
+      "аккумулятор 3110 мАh",
+      "вес 194 г, ШxВxГ 150.9 х 75.7 х 8.3 мм "
+    ]
   },
   {
-    "name":"IPhone 11 Pro Max",
+    "name": "IPhone 11 Pro",
     "type": "apple",
     "options": {
-      "memory": [256, 512]
+      "memory": [
+        64,
+        256,
+        512
+      ]
     },
-    "prices":[109990, 124990],
-    "images": ["iphone_11_pro_max.jpg"]
+    "prices": [
+      79990,
+      89990,
+      99990
+    ],
+    "images": [
+      "11_pro.jpg"
+    ],
+    "description": [
+      "экран 5.8 (14.5 см), OLED, Super Retina XDR",
+      "камера 12МП + 12 + 12 (тройная), 3840x2160px (4K) ",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 6 Гб",
+      "аккумулятор 3190 мАh",
+      "вес 194 г, ШxВxГ 144 х 71.4 х 8.1 мм "
+    ]
   },
-
   {
-    "name":"Apple Watch S3",
+    "name": "IPhone 11 Pro Max",
+    "type": "apple",
+    "options": {
+      "memory": [
+        256,
+        512
+      ]
+    },
+    "prices": [
+      109990,
+      124990
+    ],
+    "images": [
+      "iphone_11_pro_max.jpg"
+    ],
+    "description": [
+      "экран 6.5 (16.5 см), OLED, Super Retina XDR",
+      "камера 12МП + 12 + 12 (тройная), 3840x2160px (4K) ",
+      "3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС",
+      "объем оперативной памяти 6 Гб",
+      "аккумулятор 3500 мАh",
+      "вес 226 г, ШxВxГ 158 х 77.8 х 8.1 мм "
+    ]
+  },
+  {
+    "name": "Apple Watch S3",
     "type": "accessory",
     "options": {
-      "size": [38, 42]
+      "display": [
+        38,
+        42
+      ]
     },
-    "prices":[16490, 18490],
-    "images": ["Apple_Watch_S3.jpg"]
+    "prices": [
+      16490,
+      18490
+    ],
+    "images": [
+      "Apple_Watch_S3.jpg"
+    ]
   },
   {
-    "name":"Apple Watch S4",
+    "name": "Apple Watch S4",
     "type": "accessory",
     "options": {
-      "size": [40, 44]
+      "display": [
+        40,
+        44
+      ]
     },
-    "prices":[27490, 28490],
-    "images": ["Apple_Watch_S4.jpg"]
+    "prices": [
+      27490,
+      28490
+    ],
+    "images": [
+      "Apple_Watch_S4.jpg"
+    ]
   },
   {
-    "name":"Apple Watch S5",
+    "name": "Apple Watch S5",
     "type": "accessory",
     "options": {
-      "size": [40, 44]
+      "display": [
+        40,
+        44
+      ]
     },
-    "prices":[33990, 35990],
-    "images": ["Apple_Watch_S5.jpg"]
-  },
-
-  {
-    "name":"Poco F1",
-    "type": "xiaomi",
-    "options": {
-      "memory": [64]
-    },
-    "prices":[17990],
-    "images": ["xiaomi_pocophone_f1.jpg"]
-  },
-  {
-    "name":"Xiaomi MI 9 T",
-    "type": "xiaomi",
-    "options": {
-      "memory": [64, 128]
-    },
-    "prices":[21990, 23990],
-    "images": ["xiaomi_mi_9_t.jpg"]
-  },
-  {
-    "name":"Xiaomi MI 8",
-    "type": "xiaomi",
-    "options": {
-      "memory": [64, 128]
-    },
-    "prices":[13990, 16990],
-    "images": ["xiaomi_mi_8_lite.jpg"]
-  },
-  {
-    "name":"Xiaomi MI 9",
-    "type": "xiaomi",
-    "options": {
-      "memory": [64, 128]
-    },
-    "prices":[26990, 28990],
-    "images": ["xiaomi_mi_9.jpg"]
-  },
-  {
-    "name":"Xiaomi Note 7",
-    "type": "xiaomi",
-    "options": {
-      "memory": [32, 64]
-    },
-    "prices":[12990, 13990],
-    "images": ["redmi_note_7.jpg"]
-  },
-  {
-    "name":"Xiaomi Redmi 7",
-    "type": "xiaomi",
-    "options": {
-      "memory": [16, 32]
-    },
-    "prices":[6990, 70490],
-    "images": ["xiaomi_redmi_7.jpg"]
-  },
-  {
-    "name":"Xiaomi Redmi GO",
-    "type": "xiaomi",
-    "options": {
-      "memory": [16]
-    },
-    "prices":[5490],
-    "images": ["xiaomi_rerdmi_go.jpg"]
-  },
-
-  {
-    "name":"Samsung A10",
-    "type": "samsung",
-    "options" : {
-      "memory": [32]
-    },
-    "prices": [9900],
-    "images": ["samsung_a_10.jpg"]
-  },
-  {
-    "name":"Samsung A20",
-    "type": "samsung",
-    "options" : {
-      "memory": [32]
-    },
-    "prices": [12900],
-    "images": ["samsung_a_20.jpg"]
-  },
-  {
-    "name":"Samsung A30",
-    "type": "samsung",
-    "options" : {
-      "memory": [32]
-    },
-    "prices": [13900],
-    "images": ["samsung_a_30.jpg"]
-  },
-  {
-    "name":"Samsung A50",
-    "type": "samsung",
-    "options" : {
-      "memory": [64, 128]
-    },
-    "prices": [16990, 19990],
-    "images": ["samsung_a_50.jpg"]
-  },
-  {
-    "name":"Samsung S10+",
-    "type": "samsung",
-    "options" : {
-      "memory": [128]
-    },
-    "prices": [59900],
-    "images": ["samsung_s_10+.jpeg"]
-  },
-  {
-    "name":"Samsung S10",
-    "type": "samsung",
-    "options" : {
-      "memory": [128]
-    },
-    "prices": [54900],
-    "images": ["samsung_s_10.jpg"]
-  },
-  {
-    "name":"Samsung S10e",
-    "type": "samsung",
-    "options" : {
-      "memory": [128]
-    },
-    "prices": [43900],
-    "images": ["samsung_s_10e.jpg"]
+    "prices": [
+      33990,
+      35990
+    ],
+    "images": [
+      "Apple_Watch_S5.jpg"
+    ]
   }
 ]
