@@ -310,6 +310,13 @@
     font-size: 40px;
 }
 
+.no-products {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 30px;
+    height: 40vh;
+}
+
 @media (max-width: 940px) {
     .product-title {
         font-size: 25px;
@@ -339,5 +346,12 @@
 
     .service-item {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .no-products {
+        font-size: 20px;
+        height: 20vh;
     }
 }
