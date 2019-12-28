@@ -30,13 +30,14 @@ export class Products extends React.Component {
         this.state = {
             currentProduct: {},
             selectedMainOptionIndex: 0,
-            openServiceTab: 'description'
+            openServiceTab: 'description',
+            isShowSocialIcon: false
         };
     }
 
     renderCard = () => {
         const { name, options, prices, images } = this.state.currentProduct;
-        const { selectedMainOptionIndex, openServiceTab } = this.state;
+        const { selectedMainOptionIndex, openServiceTab, isShowSocialIcon } = this.state;
         const nameOption = Object.keys(options)[0];
         return (
             <div className={styles['product-card']}>
@@ -87,12 +88,43 @@ export class Products extends React.Component {
 
                             <div className={styles['card-options-item']}>
                                 <a
-                                    href="tel:+79631033030"
+                                    // href="tel:+79631033030"
                                     type="button"
                                     className={styles['product-item-buy']}
+                                    onClick={() =>
+                                        this.setState({ isShowSocialIcon: !isShowSocialIcon })
+                                    }
                                 >
                                     Связаться
                                 </a>
+
+                                <div
+                                    className={`${styles.social} ${
+                                        isShowSocialIcon ? styles['social-active'] : ''
+                                    }`}
+                                >
+                                    <a
+                                        href="https://vk.com/elcor58"
+                                        className={`${styles['social-item']} ${
+                                            styles['social-vk']
+                                        }`}
+                                    />
+                                    <a
+                                        href="https://instagram.com/elcor58"
+                                        className={`${styles['social-item']} ${
+                                            styles['social-insta']
+                                        }`}
+                                    />
+
+                                    <a
+                                        href="tel:+79631033030"
+                                        className={styles['phone-container']}
+                                    >
+                                        <span className={`material-icons ${styles['phone-icon']}`}>
+                                            local_phones
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
