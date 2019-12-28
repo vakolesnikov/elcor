@@ -18,9 +18,9 @@ const OPTION_NAMES = {
 };
 
 const SERVICE_TABS = [
-    { name: 'description', title: 'описание' },
-    { name: 'delivery', title: 'доставка' },
-    { name: 'payment', title: 'оплата' }
+    { name: 'description', title: 'Описание' },
+    { name: 'delivery', title: 'Доставка' },
+    { name: 'payment', title: 'Оплата' }
 ];
 
 export class Products extends React.Component {
@@ -104,7 +104,7 @@ export class Products extends React.Component {
                                     }`}
                                 >
                                     <a
-                                        href="https://vk.com/elcor58"
+                                        href="https://vk.com/im?media=&sel=-120354441"
                                         className={`${styles['social-item']} ${
                                             styles['social-vk']
                                         }`}
@@ -163,7 +163,7 @@ export class Products extends React.Component {
     };
 
     renderDescriptionContent = () => {
-        const { openServiceTab } = this.state;
+        const { openServiceTab, currentProduct } = this.state;
 
         return (
             <div
@@ -172,20 +172,11 @@ export class Products extends React.Component {
                 }`}
             >
                 <h3>Коротко о товаре:</h3>
-                <div className={styles['description-item']}>- смартфон с iOS 10</div>
-                <div className={styles['description-item']}>- экран 4.7", разрешение 1334x750</div>
-                <div className={styles['description-item']}>- камера 12 МП, автофокус</div>
-                <div className={styles['description-item']}>
-                    - память 32 Гб, без слота для карт памяти
-                </div>
-                <div className={styles['description-item']}>
-                    - 3G, 4G LTE, LTE-A, Wi-Fi, Bluetooth, NFC, GPS, ГЛОНАСС
-                </div>
-                <div className={styles['description-item']}>- объем оперативной памяти 2 Гб</div>
-                <div className={styles['description-item']}>- аккумулятор 1960 мА⋅ч</div>
-                <div className={styles['description-item']}>
-                    - вес 138 г, ШxВxТ 67.10x138.30x7.10 мм
-                </div>
+                {currentProduct.description.map(text => (
+                    <div key={text} className={styles['description-item']}>
+                        - {text}
+                    </div>
+                ))}
             </div>
         );
     };

@@ -217,10 +217,10 @@
     }
 
     .navigation-list {
-        flex-direction: column;
+        /*flex-direction: column;*/
     }
 
     .navigation-item {
-        width: 100%;
+        width: 48%;
     }
 }
