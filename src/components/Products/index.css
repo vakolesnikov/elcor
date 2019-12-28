@@ -37,6 +37,13 @@
     align-items: center;
     border: 1px solid #e1e1e1;
     cursor: pointer;
+    transition: .5s;
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.5);
+}
+
+.product-item:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.5);
 }
 
 .product-item-image {
@@ -85,6 +92,7 @@
 
 .product-card {
     position: fixed;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -121,6 +129,14 @@
     padding-top: 30px;
 }
 
+.product-card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 .card-options-item {
     padding: 20px 0;
     border-bottom: 1px solid #999999;
@@ -128,6 +144,10 @@
     display: flex;
     align-content: baseline;
     align-items: center;
+}
+
+.card-options-item:last-child {
+    border-bottom: none;
 }
 
 .card-close-button {
@@ -150,12 +170,12 @@
 }
 
 .card-image {
-    max-width: 260px;
+    max-height: 200px;
     padding: 10px;
 }
 
 .card-image img {
-    width: 100%;
+    max-height: 200px;
 }
 
 .option-param {
@@ -166,12 +186,14 @@
     background-color: #ffffff;
     text-align: center;
     outline: none;
+    width: 80px;
 }
 
 .selected-option-param {
     background-color: #893810;
     color: #fff;
     border-color: #eeeeee;
+    width: 80px;
 }
 
 .options-title {
@@ -259,6 +281,7 @@
     .product-card-content {
         width: 90%;
         padding: 20px;
+        overflow: scroll;
     }
 
     .service-tab {

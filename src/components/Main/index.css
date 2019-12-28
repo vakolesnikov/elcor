@@ -94,11 +94,10 @@
 }
 
 .main-button:hover{
-    background-color: #e74246;
+    background-color: #521c02;
 }
 
 .main-button:active{
-    background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
 }
 

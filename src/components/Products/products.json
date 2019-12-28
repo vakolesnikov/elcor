@@ -4,7 +4,7 @@
     "type": "apple",
     "options": {
       "memory": [
-        32
+        "32 GB"
       ]
     },
     "prices": [
@@ -27,8 +27,8 @@
     "type": "apple",
     "options": {
       "memory": [
-        32,
-        128
+        "32 GB",
+        "128 GB"
       ]
     },
     "prices": [
@@ -52,8 +52,8 @@
     "type": "apple",
     "options": {
       "memory": [
-        32,
-        128
+        "32 GB",
+        "128 GB"
       ]
     },
     "prices": [
@@ -77,9 +77,9 @@
     "type": "apple",
     "options": {
       "memory": [
-        64,
-        128,
-        256
+        "64 GB",
+        "128 GB",
+        "256 GB"
       ]
     },
     "prices": [
@@ -104,9 +104,9 @@
     "type": "apple",
     "options": {
       "memory": [
-        64,
-        128,
-        256
+        "64 GB",
+        "128 GB",
+        "256 GB"
       ]
     },
     "prices": [
@@ -131,8 +131,8 @@
     "type": "apple",
     "options": {
       "memory": [
-        64,
-        256
+        "64 GB",
+        "256 GB"
       ]
     },
     "prices": [
@@ -156,8 +156,8 @@
     "type": "apple",
     "options": {
       "memory": [
-        64,
-        256
+        "64 GB",
+        "256 GB"
       ]
     },
     "prices": [
@@ -181,8 +181,8 @@
     "type": "apple",
     "options": {
       "memory": [
-        64,
-        256
+        "64 GB",
+        "256 GB"
       ]
     },
     "prices": [
@@ -206,9 +206,9 @@
     "type": "apple",
     "options": {
       "memory": [
-        64,
-        128,
-        256
+        "64 GB",
+        "128 GB",
+        "256 GB"
       ]
     },
     "prices": [
@@ -233,9 +233,9 @@
     "type": "apple",
     "options": {
       "memory": [
-        64,
-        128,
-        256
+        "64 GB",
+        "128 GB",
+        "256 GB"
       ]
     },
     "prices": [
@@ -260,9 +260,9 @@
     "type": "apple",
     "options": {
       "memory": [
-        64,
-        256,
-        512
+        "64 GB",
+        "256 GB",
+        "512 GB"
       ]
     },
     "prices": [
@@ -287,8 +287,8 @@
     "type": "apple",
     "options": {
       "memory": [
-        256,
-        512
+        "256 GB",
+        "512 GB"
       ]
     },
     "prices": [
