@@ -11,23 +11,25 @@ const pageTitles = {
     accessory: 'Аксессуары'
 };
 
-const Products = props => {
-    const { id: currentProduct } = props.match.params;
-    const isAll = currentProduct === 'all';
-    const selectedProduct = isAll
-        ? products
-        : products.filter(item => item.type === currentProduct);
+export class Products extends React.Component {
+    render() {
+        const { id: currentProduct } = this.props.match.params;
+        const isAll = currentProduct === 'all';
+        const selectedProduct = isAll
+            ? products
+            : products.filter(item => item.type === currentProduct);
 
-    return (
-        <div className={styles['product-container']}>
-            <h2 className={styles['product-title']}>{pageTitles[currentProduct]}</h2>
-            <div className={styles['product-list']}>
-                {selectedProduct.map((product, index) => {
-                    return <ProductItem {...product} key={`${product.name}${index}`} />;
-                })}
+        return (
+            <div className={styles['product-container']}>
+                <h2 className={styles['product-title']}>{pageTitles[currentProduct]}</h2>
+                <div className={styles['product-list']}>
+                    {selectedProduct.map((product, index) => {
+                        return <ProductItem {...product} key={`${product.name}${index}`} />;
+                    })}
+                </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+}
 
 export default Products;
