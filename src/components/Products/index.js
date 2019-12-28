@@ -27,11 +27,15 @@ export class Products extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
+        this.initialState = {
             currentProduct: {},
             selectedMainOptionIndex: 0,
             openServiceTab: 'description',
             isShowSocialIcon: false
+        };
+
+        this.state = {
+            ...this.initialState
         };
     }
 
@@ -43,7 +47,7 @@ export class Products extends React.Component {
             <div className={styles['product-card']}>
                 <div
                     className={styles['product-card-overlay']}
-                    onClick={() => this.setState({ currentProduct: {} })}
+                    onClick={() => this.setState(this.initialState)}
                 />
                 <div className={styles['product-card-content']}>
                     <div className={styles['main-product-information']}>
@@ -153,7 +157,7 @@ export class Products extends React.Component {
                     <button
                         type="button"
                         className={styles['card-close-button']}
-                        onClick={() => this.setState({ currentProduct: {} })}
+                        onClick={() => this.setState(this.initialState)}
                     >
                         <span className="material-icons">close</span>
                     </button>
