@@ -252,15 +252,22 @@ export class Products extends React.Component {
             <div className={styles['product-container']}>
                 <h2 className={styles['product-title']}>{pageTitles[currentProductId]}</h2>
                 <div className={styles['product-list']}>
-                    {selectedProduct.map((product, index) => {
-                        return (
-                            <ProductItem
-                                {...product}
-                                key={`${product.name}${index}`}
-                                handleClick={() => this.setState({ currentProduct: product })}
-                            />
-                        );
-                    })}
+                    {selectedProduct.length ? (
+                        selectedProduct.map((product, index) => {
+                            return (
+                                <ProductItem
+                                    {...product}
+                                    key={`${product.name}${index}`}
+                                    handleClick={() => this.setState({ currentProduct: product })}
+                                />
+                            );
+                        })
+                    ) : (
+                        <div className={styles['no-product']}>
+                            Товар времменно отсутствует в продаже. Можете подобрать для себя
+                            что-нибудь в других категориях ;)
+                        </div>
+                    )}
                 </div>
                 {currentProduct.name && this.renderCard()}
             </div>

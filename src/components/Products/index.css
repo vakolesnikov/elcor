@@ -188,6 +188,7 @@
     text-align: center;
     outline: none;
     width: 80px;
+    cursor: pointer;
 }
 
 .selected-option-param {
@@ -310,6 +311,13 @@
     font-size: 40px;
 }
 
+.no-product {
+    min-height: 20vh;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
 @media (max-width: 940px) {
     .product-title {
         font-size: 25px;
@@ -339,5 +347,9 @@
 
     .service-item {
         font-size: 12px;
+    }
+
+    .no-product {
+        font-size: 20px;
     }
 }
