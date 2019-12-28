@@ -37,7 +37,7 @@ class ProductItem extends React.Component {
                             <h2 className={styles['card-title']}>{name}</h2>
                             <div className={styles['card-image']}>
                                 <img
-                                    src={`http://127.0.0.1/images/${images[0]}`}
+                                    src={`http://elcor58.ru/images/${images[0]}`}
                                     alt="samsungImg"
                                 />
                             </div>
@@ -204,7 +204,7 @@ class ProductItem extends React.Component {
                 <div className={styles['product-image-container']}>
                     <img
                         className={styles['product-item-image']}
-                        src={`http://127.0.0.1/images/${images[0]}`}
+                        src={`http://elcor58.ru/images/${images[0]}`}
                         alt="apple"
                     />
                 </div>
