@@ -311,11 +311,11 @@
     font-size: 40px;
 }
 
-.no-product {
-    min-height: 20vh;
-    padding: 20px;
+.no-products {
     font-size: 30px;
     text-align: center;
+    padding-top: 30px;
+    height: 40vh;
 }
 
 @media (max-width: 940px) {
@@ -351,5 +351,12 @@
 
     .no-product {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .no-products {
+        font-size: 20px;
+        height: 20vh;
     }
 }
