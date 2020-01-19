@@ -182,7 +182,7 @@ export class Products extends React.Component {
                 }`}
             >
                 <h3>Коротко о товаре:</h3>
-                {currentProduct.description.map(text => (
+                {currentProduct.descriptions.map(text => (
                     <div key={text} className={styles['description-item']}>
                         - {text}
                     </div>
