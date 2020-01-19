@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styles from './index.css';
-import products from './products';
 import ProductItem from '../ProductItem';
 
 const pageTitles = {
@@ -31,16 +30,19 @@ export class Products extends React.Component {
             currentProduct: {},
             selectedMainOptionIndex: 0,
             openServiceTab: 'description',
-            isShowSocialIcon: false
+            isShowSocialIcon: false,
+            products: []
         };
 
         this.state = {
             ...this.initialState
         };
 
-        fetch('http://127.0.0.1:3000/product_list')
+        const host = process.env.NODE_ENV === 'development' ? 'localhost:3000' : 'elcor58.ru:3000';
+
+        fetch(`http://${host}/product_list`)
             .then(res => res.json())
-            .then(res => console.log(res));
+            .then(res => this.setState({ products: res }));
     }
 
     renderCard = () => {
@@ -240,6 +242,8 @@ export class Products extends React.Component {
     };
 
     render() {
+        const { products } = this.state;
+
         const { id: currentProductId } = this.props.match.params;
         const { currentProduct } = this.state;
         const isAll = currentProductId === 'all';

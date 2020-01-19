@@ -31,7 +31,7 @@ class ProductItem extends React.Component {
 
 ProductItem.propTypes = {
     name: PropTypes.string.isRequired,
-    prices: PropTypes.arrayOf(PropTypes.number).isRequired,
+    prices: PropTypes.arrayOf(PropTypes.string).isRequired,
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     handleClick: PropTypes.func.isRequired
 };
