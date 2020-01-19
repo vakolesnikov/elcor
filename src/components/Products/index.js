@@ -37,6 +37,10 @@ export class Products extends React.Component {
         this.state = {
             ...this.initialState
         };
+
+        fetch('http://127.0.0.1:3000/product_list')
+            .then(res => res.json())
+            .then(res => console.log(res));
     }
 
     renderCard = () => {
