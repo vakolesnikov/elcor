@@ -30,12 +30,12 @@ export class Products extends React.Component {
             currentProduct: {},
             selectedMainOptionIndex: 0,
             openServiceTab: 'description',
-            isShowSocialIcon: false,
-            products: []
+            isShowSocialIcon: false
         };
 
         this.state = {
-            ...this.initialState
+            ...this.initialState,
+            products: []
         };
 
         const host = process.env.NODE_ENV === 'development' ? 'localhost:3000' : 'elcor58.ru:3000';
