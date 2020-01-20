@@ -12,7 +12,7 @@ class ProductItem extends React.Component {
                 <div className={styles['product-image-container']}>
                     <img
                         className={styles['product-item-image']}
-                        src={`http://elcor58.ru/images/${images[0]}`}
+                        src={`http://elcor58.ru:3000/images/${images[0]}`}
                         alt="apple"
                     />
                 </div>
