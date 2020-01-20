@@ -55,7 +55,7 @@ export class Products extends React.Component {
                             <h2 className={styles['card-title']}>{name}</h2>
                             <div className={styles['card-image']}>
                                 <img
-                                    src={`http://elcor58.ru/images/${images[0]}`}
+                                    src={`http://elcor58.ru:3000/images/${images[0]}`}
                                     alt="samsungImg"
                                 />
                             </div>
