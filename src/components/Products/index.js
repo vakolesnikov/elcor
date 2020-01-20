@@ -1,4 +1,5 @@
 import React from 'react';
+import { getProductList, originHost } from '../../api';
 
 import styles from './index.css';
 import ProductItem from '../ProductItem';
@@ -30,40 +31,37 @@ export class Products extends React.Component {
             currentProduct: {},
             selectedMainOptionIndex: 0,
             openServiceTab: 'description',
-            isShowSocialIcon: false,
-            products: []
+            isShowSocialIcon: false
         };
 
         this.state = {
-            ...this.initialState
+            ...this.initialState,
+            products: []
         };
 
-        const host = process.env.NODE_ENV === 'development' ? 'localhost:3000' : 'elcor58.ru:3000';
-
-        fetch(`http://${host}/product_list`)
-            .then(res => res.json())
-            .then(res => this.setState({ products: res }));
+        getProductList().then(res => this.setState({ products: res }));
     }
 
     renderCard = () => {
-        const { name, options, prices, images } = this.state.currentProduct;
-        const { selectedMainOptionIndex, openServiceTab, isShowSocialIcon } = this.state;
+        const {
+            selectedMainOptionIndex,
+            openServiceTab,
+            isShowSocialIcon,
+            currentProduct
+        } = this.state;
+        const { name, options, prices, images } = currentProduct;
         const nameOption = Object.keys(options)[0];
+        const img = `${originHost}/images/${images[0]}`;
+
         return (
             <div className={styles['product-card']}>
-                <div
-                    className={styles['product-card-overlay']}
-                    onClick={() => this.setState(this.initialState)}
-                />
+                <div className={styles['product-card-overlay']} onClick={this.clearState} />
                 <div className={styles['product-card-content']}>
                     <div className={styles['main-product-information']}>
                         <div className={styles['product-card-information']}>
                             <h2 className={styles['card-title']}>{name}</h2>
                             <div className={styles['card-image']}>
-                                <img
-                                    src={`http://elcor58.ru:3000/images/${images[0]}`}
-                                    alt="samsungImg"
-                                />
+                                <img src={img} alt="samsungImg" />
                             </div>
                         </div>
                         <div className={styles['product-card-options']}>
@@ -97,8 +95,7 @@ export class Products extends React.Component {
                             </div>
 
                             <div className={styles['card-options-item']}>
-                                <a
-                                    // href="tel:+79631033030"
+                                <button
                                     type="button"
                                     className={styles['product-item-buy']}
                                     onClick={() =>
@@ -106,7 +103,7 @@ export class Products extends React.Component {
                                     }
                                 >
                                     Связаться
-                                </a>
+                                </button>
 
                                 <div
                                     className={`${styles.social} ${
@@ -163,7 +160,7 @@ export class Products extends React.Component {
                     <button
                         type="button"
                         className={styles['card-close-button']}
-                        onClick={() => this.setState(this.initialState)}
+                        onClick={this.clearState}
                     >
                         <span className="material-icons">close</span>
                     </button>
@@ -241,6 +238,8 @@ export class Products extends React.Component {
         );
     };
 
+    clearState = () => this.setState(this.initialState);
+
     render() {
         const { products } = this.state;
 
@@ -260,7 +259,8 @@ export class Products extends React.Component {
                             return (
                                 <ProductItem
                                     {...product}
-                                    key={`${product.name}${index}`}
+                                    price={product.prices[0]}
+                                    key={product._id}
                                     handleClick={() => this.setState({ currentProduct: product })}
                                 />
                             );

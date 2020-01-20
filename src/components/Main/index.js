@@ -5,12 +5,8 @@ import elcorLogo from '../../assets/elcor-logo.png';
 import Map from '../Map';
 
 import styles from './index.css';
+import config from '../../config';
 
-const advantagesItems = [
-    { title: 'Уровень самоотдачи', value: 146 },
-    { title: 'Соблюдение сроков', value: 100 },
-    { title: 'Минимальная предоплата', value: 30 }
-];
 
 export default class Main extends React.Component {
     render() {
@@ -67,7 +63,7 @@ export default class Main extends React.Component {
                                     Любим точность во всем:
                                 </div>
                                 <div className={styles['advantages-content']}>
-                                    {advantagesItems.map(({ title, value }) => (
+                                    {config.main.advantagesItems.map(({ title, value }) => (
                                         <div className={styles['advantages-item']} key={title}>
                                             <span>
                                                 {value}
