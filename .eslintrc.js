@@ -34,6 +34,10 @@ module.exports = {
             },
         ],
         'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-        'react/static-property-placement': 0
+        'react/static-property-placement': 0,
+        'import/prefer-default-export': 0,
+        'jsx-a11y/anchor-has-content': 0,
+        'jsx-a11y/no-static-element-interactions': 0,
+        'jsx-a11y/click-events-have-events': 0
     }
 };

@@ -261,7 +261,7 @@
     width: 100%;
 }
 
-.studio-information{
+.store-information{
     width: 320px;
     background-color: white;
     padding: 50px;
@@ -270,7 +270,7 @@
     border-radius: 20px;
 }
 
-.studio-information-title{
+.store-information-title{
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -285,9 +285,11 @@
 
 .maps-button{
     width: 219px;
+    color: #ffffff;
+    font-weight: 700;
 }
 
-.studio-information a{
+.store-information-tel {
     display: inline-block;
     margin-bottom: 38px;
     font-weight: 400;
@@ -361,7 +363,7 @@
         width: 200px;
     }
 
-    .studio-information {
+    .store-information {
         display: none;
     }
 

@@ -272,7 +272,7 @@
     width: 100%;
 }
 
-.studio-information{
+.store-information{
     width: 320px;
     background-color: white;
     padding: 50px;
@@ -281,7 +281,7 @@
     border-radius: 20px;
 }
 
-.studio-information-title{
+.store-information-title{
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -298,7 +298,7 @@
     width: 219px;
 }
 
-.studio-information a{
+.store-information a{
     display: inline-block;
     margin-bottom: 38px;
     font-weight: 400;
