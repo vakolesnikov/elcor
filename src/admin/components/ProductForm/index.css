@@ -1,0 +1,33 @@
+.form-button {
+    background-color: #f4bfbf;
+    border: none;
+    height: 30px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.option-value {
+}
+
+.value-item {
+    margin-bottom: 10px;
+}
+
+.form-item {
+    padding: 20px;
+    font-size: 14px;
+    border: 1px solid ;
+}
+
+.form-item-title {
+    font-weight: 700;
+    color: #8b0000;
+    margin-right: 10px;
+}
+
+.form-item-title span {
+    margin-right: 5px;
+}
+

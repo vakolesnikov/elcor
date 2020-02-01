@@ -1,0 +1,12 @@
+
+.form-item {
+    padding: 20px;
+    font-size: 14px;
+    border: 1px solid ;
+}
+
+.form-item-title {
+    font-weight: 700;
+    color: #8b0000;
+    margin-right: 10px;
+}
