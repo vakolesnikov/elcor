@@ -234,13 +234,13 @@ export class Products extends React.Component {
             >
                 <h3>Оплатить заказ можно разными способами:</h3>
                 <ul>
-                    <li className={styles['delivery-information-item']}>
+                    <li className={styles['payment-information-item']}>
                         <b>Наличными</b>
                     </li>
-                    <li>
+                    <li className={styles['payment-information-item']}>
                         <b>Банковской картой Visa или MasterCard</b>
                     </li>
-                    <li>
+                    <li className={styles['payment-information-item']}>
                         <b>Рассрочка от 6 до 24 месяцев</b>
                     </li>
                 </ul>

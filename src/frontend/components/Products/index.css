@@ -252,6 +252,10 @@
     padding: 20px 0;
 }
 
+.payment-information-item {
+    padding: 10px 0;
+}
+
 .delivery-information b {
     display: inline-block;
     margin-bottom: 10px;
