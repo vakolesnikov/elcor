@@ -39,7 +39,14 @@ export class Products extends React.Component {
             products: []
         };
 
-        getProductList().then(res => this.setState({ products: res }));
+        const compare = (elem1, elem2) => {
+            const [first] = elem1.prices;
+            const [second] = elem2.prices;
+
+            return +first > +second ? 1 : -1;
+        };
+
+        getProductList().then(res => this.setState({ products: res.sort(compare) }));
     }
 
     renderCard = () => {
