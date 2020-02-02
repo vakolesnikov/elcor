@@ -24,6 +24,9 @@ export default class Footer extends React.Component {
                             Скидка до 10% для друзей из социальных сетей
                         </span>
                     </div>
+                    <div className={styles['product-by']}>
+                        developed by <a href="https://vk.com/v.a.kolesnikov">v.kolesnikov</a>
+                    </div>
                 </footer>
             </div>
         );

@@ -8,6 +8,7 @@
 .main-footer{
     display: flex;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .social{
@@ -59,6 +60,18 @@
     line-height: 22px;
 }
 
+.product-by {
+    color: #afafaf;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 13px;
+}
+
+.product-by a {
+    color: #afafaf;
+}
+
 @media (max-width: 940px) {
     .social-item {
         width: 40px;
@@ -90,5 +103,11 @@
     .social {
         width: auto;
         order: 2;
+    }
+
+    .product-by {
+        position: static;
+        order: 3;
+        padding-top: 10px;
     }
 }
