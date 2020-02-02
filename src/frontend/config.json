@@ -1,0 +1,28 @@
+{
+  "header": {
+    "tabs": [
+      {"type": "apple", "name": "apple"},
+      {"type": "samsung", "name": "samsung"},
+      {"type": "xiaomi", "name": "xiaomi"},
+      {"type": "accessory", "name": "аксессуары"}
+    ]
+  },
+  "main": {
+    "advantagesItems": [
+      {"title": "Уровень самоотдачи", "value": 146},
+      {"title": "Соблюдение сроков", "value": 100},
+      {"title": "Минимальная предоплата", "value": 30}
+    ]
+  },
+  "products": {
+    "optionNames": {
+      "memory": "Память",
+      "size": "Размер"
+    },
+    "serviceTabs": [
+      { "name": "description", "title": "Описание" },
+      { "name": "delivery", "title": "Доставка" },
+      { "name": "payment", "title": "Оплата" }
+    ]
+  }
+}

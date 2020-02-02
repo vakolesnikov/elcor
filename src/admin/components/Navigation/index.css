@@ -1,0 +1,17 @@
+.main-navigation {
+    background-color: #263434;
+    padding: 20px;
+}
+
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-navigation ul {
+    list-style: none;
+}
+
+.main-navigation li {
+    padding: 10px 0;
+}
