@@ -240,6 +240,9 @@ export class Products extends React.Component {
                     <li>
                         <b>Банковской картой Visa или MasterCard</b>
                     </li>
+                    <li>
+                        <b>Рассрочка от 6 до 24 месяцев</b>
+                    </li>
                 </ul>
             </div>
         );
