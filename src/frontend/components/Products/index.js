@@ -14,7 +14,7 @@ const pageTitles = {
 
 const OPTION_NAMES = {
     memory: 'Память',
-    size: 'Размер'
+    display: 'Дисплей'
 };
 
 const SERVICE_TABS = [
