@@ -23,7 +23,7 @@ const SERVICE_TABS = [
     { name: 'payment', title: 'Оплата' }
 ];
 
-export class Products extends React.Component {
+export default class Products extends React.Component {
     constructor(props) {
         super(props);
 
@@ -265,7 +265,7 @@ export class Products extends React.Component {
                 <h2 className={styles['product-title']}>{pageTitles[currentProductId]}</h2>
                 <div className={styles['product-list']}>
                     {selectedProduct.length ? (
-                        selectedProduct.map((product, index) => {
+                        selectedProduct.map(product => {
                             return (
                                 <ProductItem
                                     {...product}
@@ -287,5 +287,3 @@ export class Products extends React.Component {
         );
     }
 }
-
-export default Products;
