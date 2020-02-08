@@ -7,7 +7,7 @@ import { Select } from '../../ui/Select';
 import { FormItemWrapper } from '../../ui/FormItemWrapper';
 import { clearSelectedProductId } from '../../actions';
 import { addProduct, updateProduct } from '../../asyncActions';
-import { optionsForTypes } from '../../../constants';
+import { optionsForTypes, optionsForProductOptions } from '../../../constants';
 
 import style from './index.css';
 
@@ -41,11 +41,7 @@ class ProductForm extends React.Component {
         };
 
         this.optionsForTypes = optionsForTypes;
-        this.optionsForProductOptions = [
-            { value: 'memory', title: 'память' },
-            { value: 'display', title: 'дисплей' },
-            { value: 'capacity', title: 'емкость' }
-        ];
+        this.optionsForProductOptions = optionsForProductOptions;
         this.fields = [
             {
                 title: 'Значения опции',

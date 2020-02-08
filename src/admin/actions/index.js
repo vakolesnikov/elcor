@@ -5,6 +5,11 @@ export const setProductList = data => ({
     data
 });
 
+export const setSelectedType = data => ({
+    type: actionTypes.SET_SELECTED_TYPE,
+    data
+});
+
 export const setSelectedProductId = data => ({
     type: actionTypes.SET_SELECTED_PRODUCT_ID,
     data

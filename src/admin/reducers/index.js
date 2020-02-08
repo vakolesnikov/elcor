@@ -2,7 +2,8 @@ import * as actionTypes from '../actionTypes';
 
 const initialState = {
     productList: [],
-    selectedProductId: null
+    selectedProductId: null,
+    selectedType: 'all'
 };
 
 export default (state = initialState, action) => {
@@ -22,6 +23,15 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 selectedProductId: id
+            };
+        }
+
+        case actionTypes.SET_SELECTED_TYPE: {
+            const { selectedType } = action.data;
+
+            return {
+                ...state,
+                selectedType
             };
         }
 

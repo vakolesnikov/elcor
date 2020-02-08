@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { removeProduct } from '../../asyncActions';
-import { setSelectedProductId } from '../../actions';
+import { setSelectedProductId, setSelectedType } from '../../actions';
 import { Select } from '../../ui/Select';
 import { optionsForTypes } from '../../../constants';
 import style from './index.css';
@@ -12,21 +12,20 @@ class ProductList extends React.Component {
         super();
 
         this.types = [{ title: 'все', value: 'all' }, ...optionsForTypes];
-
-        this.state = {
-            selectedType: 'all'
-        };
     }
-
-    handleChangeType = selectedType => this.setState({ selectedType });
 
     render() {
         const compare = (elem1, elem2) => {
             return +elem1.indexNumber > +elem2.indexNumber ? 1 : -1;
         };
 
-        const { selectedType } = this.state;
-        const { handleRemoveProduct, handleChangeProduct, productList } = this.props;
+        const {
+            handleRemoveProduct,
+            handleChangeProduct,
+            productList,
+            handleSetSelectedType,
+            selectedType
+        } = this.props;
 
         const products =
             selectedType === 'all'
@@ -51,7 +50,7 @@ class ProductList extends React.Component {
                         name="products"
                         defaultValue={this.types[0]}
                         options={this.types}
-                        onChange={this.handleChangeType}
+                        onChange={handleSetSelectedType}
                     />
                 </div>
 
@@ -89,12 +88,14 @@ class ProductList extends React.Component {
 }
 
 const mapStateToProps = state => ({
-    productList: state.productList
+    productList: state.productList,
+    selectedType: state.selectedType
 });
 
 const mapDispatchToProps = dispatch => ({
     handleRemoveProduct: name => dispatch(removeProduct(name)),
-    handleChangeProduct: id => dispatch(setSelectedProductId({ id }))
+    handleChangeProduct: id => dispatch(setSelectedProductId({ id })),
+    handleSetSelectedType: selectedType => dispatch(setSelectedType({ selectedType }))
 });
 
 export default connect(

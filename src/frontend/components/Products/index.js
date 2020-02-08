@@ -1,5 +1,6 @@
 import React from 'react';
 import { getProductList, originHost } from '../../api';
+import { optionsForProductOptions } from '../../../constants';
 
 import styles from './index.css';
 import ProductItem from '../ProductItem';
@@ -12,11 +13,10 @@ const pageTitles = {
     all: 'Весь ассортимент'
 };
 
-const OPTION_NAMES = {
-    memory: 'Память',
-    display: 'Дисплей',
-    capacity: 'Емкость'
-};
+const OPTION_NAMES = optionsForProductOptions.reduce(
+    (acc, option) => ({ ...acc, [option.value]: option.title }),
+    {}
+);
 
 const SERVICE_TABS = [
     { name: 'description', title: 'Описание' },

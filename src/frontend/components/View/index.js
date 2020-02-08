@@ -5,6 +5,7 @@ import Main from '../Main';
 import Footer from '../Footer';
 import Products from '../Products';
 import style from './index.css';
+import { scrollToTop } from '../../../helpers';
 
 export default class View extends React.Component {
     render() {
@@ -17,6 +18,12 @@ export default class View extends React.Component {
                         <Route exact path="/products/:id" component={Products} />
                     </Switch>
                     <Footer />
+                    <span
+                        onClick={scrollToTop}
+                        className={`${style['to-top-icon']} material-icons`}
+                    >
+                        arrow_upward
+                    </span>
                 </div>
             </div>
         );
