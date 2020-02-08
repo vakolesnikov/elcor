@@ -21,6 +21,10 @@ class ProductList extends React.Component {
     handleChangeType = selectedType => this.setState({ selectedType });
 
     render() {
+        const compare = (elem1, elem2) => {
+            return +elem1.indexNumber > +elem2.indexNumber ? 1 : -1;
+        };
+
         const { selectedType } = this.state;
         const { handleRemoveProduct, handleChangeProduct, productList } = this.props;
 
@@ -52,7 +56,7 @@ class ProductList extends React.Component {
                 </div>
 
                 <ol className={style['product-list']}>
-                    {products.map(item => (
+                    {products.sort(compare).map(item => (
                         <div key={item._id} className={style['product-item']}>
                             <div className={style['product-information']}>
                                 <span className={style['product-name']}>{item.name}</span>
