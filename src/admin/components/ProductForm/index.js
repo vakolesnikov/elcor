@@ -7,6 +7,7 @@ import { Select } from '../../ui/Select';
 import { FormItemWrapper } from '../../ui/FormItemWrapper';
 import { clearSelectedProductId } from '../../actions';
 import { addProduct, updateProduct } from '../../asyncActions';
+import { optionsForTypes } from '../../../constants';
 
 import style from './index.css';
 
@@ -39,12 +40,7 @@ class ProductForm extends React.Component {
                 : [{ id: Math.random() }];
         };
 
-        this.optionsForTypes = [
-            { value: 'apple', title: 'apple' },
-            { value: 'samsung', title: 'samsung' },
-            { value: 'xiaomi', title: 'xiaomi' },
-            { value: 'accessory', title: 'accessory' }
-        ];
+        this.optionsForTypes = optionsForTypes;
         this.optionsForProductOptions = [
             { value: 'memory', title: 'память' },
             { value: 'display', title: 'дисплей' },

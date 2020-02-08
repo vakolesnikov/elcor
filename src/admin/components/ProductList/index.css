@@ -29,6 +29,7 @@
 .add-product-button {
     display: flex;
     padding-left: 40px;
+    margin-right: 50px;
 }
 
 .add-product-button a {
@@ -51,3 +52,7 @@
     margin: 10px;
 }
 
+.control-panel {
+    display: flex;
+    align-items: center;
+}
