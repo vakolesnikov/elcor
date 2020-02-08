@@ -40,11 +40,7 @@ export default class Products extends React.Component {
             products: []
         };
 
-        const compare = (elem1, elem2) => {
-            return +elem1.indexNumber > +elem2.indexNumber ? 1 : -1;
-        };
-
-        getProductList().then(res => this.setState({ products: res.sort(compare) }));
+        getProductList().then(res => this.setState({ products: res }));
     }
 
     renderCard = () => {
@@ -266,12 +262,16 @@ export default class Products extends React.Component {
                   return item.type === currentProductId; // выпилить после изменения всех продуктов в базе
               });
 
+        const compare = (elem1, elem2) => {
+            return +elem1.indexNumber > +elem2.indexNumber ? 1 : -1;
+        };
+
         return (
             <div className={styles['product-container']}>
                 <h2 className={styles['product-title']}>{pageTitles[currentProductId]}</h2>
                 <div className={styles['product-list']}>
                     {selectedProduct.length ? (
-                        selectedProduct.map(product => {
+                        selectedProduct.sort(compare).map(product => {
                             return (
                                 <ProductItem
                                     {...product}
