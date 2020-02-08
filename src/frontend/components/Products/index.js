@@ -4,6 +4,7 @@ import { optionsForProductOptions } from '../../../constants';
 
 import styles from './index.css';
 import ProductItem from '../ProductItem';
+import { scrollToTop } from '../../../helpers';
 
 const pageTitles = {
     apple: 'Apple',
@@ -247,7 +248,7 @@ export default class Products extends React.Component {
     clearState = () => this.setState(this.initialState);
 
     render() {
-        const { products } = this.state;
+        const { products, isShowArrowToTop } = this.state;
 
         const { id: currentProductId } = this.props.match.params;
         const { currentProduct } = this.state;
@@ -289,6 +290,10 @@ export default class Products extends React.Component {
                     )}
                 </div>
                 {currentProduct.name && this.renderCard()}
+
+                <span onClick={scrollToTop} className={`${styles['to-top-icon']} material-icons`}>
+                    arrow_upward
+                </span>
             </div>
         );
     }

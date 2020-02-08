@@ -153,7 +153,7 @@ class ProductForm extends React.Component {
                 <FormItemWrapper title="Категория">
                     <Select
                         isMultiple
-                        defaultValue={this.type || this.optionsForTypes[0].value}
+                        defaultValue={this.type || [this.optionsForTypes[0].value]}
                         name="type"
                         options={this.optionsForTypes}
                     />
