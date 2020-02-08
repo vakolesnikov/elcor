@@ -14,7 +14,8 @@ const pageTitles = {
 
 const OPTION_NAMES = {
     memory: 'Память',
-    display: 'Дисплей'
+    display: 'Дисплей',
+    capacity: 'Емкость'
 };
 
 const SERVICE_TABS = [
@@ -40,10 +41,7 @@ export default class Products extends React.Component {
         };
 
         const compare = (elem1, elem2) => {
-            const [first] = elem1.prices;
-            const [second] = elem2.prices;
-
-            return +first > +second ? 1 : -1;
+            return +elem1.indexNumber > +elem2.indexNumber ? 1 : -1;
         };
 
         getProductList().then(res => this.setState({ products: res.sort(compare) }));
@@ -57,7 +55,7 @@ export default class Products extends React.Component {
             currentProduct
         } = this.state;
         const { name, options, prices, images } = currentProduct;
-        const nameOption = Object.keys(options)[0];
+        const nameOption = options ? Object.keys(options)[0] : options;
         const img = `${originHost}/images/${images[0]}`;
 
         return (
@@ -72,27 +70,29 @@ export default class Products extends React.Component {
                             </div>
                         </div>
                         <div className={styles['product-card-options']}>
-                            <div className={styles['card-options-item']}>
-                                <span className={styles['options-title']}>
-                                    {OPTION_NAMES[nameOption]}:
-                                </span>
-                                {options[nameOption].map((value, index) => (
-                                    <button
-                                        type="button"
-                                        className={`${styles['option-param']} ${
-                                            selectedMainOptionIndex === index
-                                                ? styles['selected-option-param']
-                                                : ''
-                                        }`}
-                                        key={value}
-                                        onClick={() =>
-                                            this.setState({ selectedMainOptionIndex: index })
-                                        }
-                                    >
-                                        {value}
-                                    </button>
-                                ))}
-                            </div>
+                            {nameOption && (
+                                <div className={styles['card-options-item']}>
+                                    <span className={styles['options-title']}>
+                                        {OPTION_NAMES[nameOption]}:
+                                    </span>
+                                    {options[nameOption].map((value, index) => (
+                                        <button
+                                            type="button"
+                                            className={`${styles['option-param']} ${
+                                                selectedMainOptionIndex === index
+                                                    ? styles['selected-option-param']
+                                                    : ''
+                                            }`}
+                                            key={value}
+                                            onClick={() =>
+                                                this.setState({ selectedMainOptionIndex: index })
+                                            }
+                                        >
+                                            {value}
+                                        </button>
+                                    ))}
+                                </div>
+                            )}
 
                             <div className={styles['card-options-item']}>
                                 <span className={styles['options-title']}>Цена:</span>
@@ -258,7 +258,13 @@ export default class Products extends React.Component {
         const isAll = currentProductId === 'all';
         const selectedProduct = isAll
             ? products
-            : products.filter(item => item.type === currentProductId);
+            : products.filter(item => {
+                  if (Array.isArray(item.type)) {
+                      return item.type.includes(currentProductId);
+                  }
+
+                  return item.type === currentProductId; // выпилить после изменения всех продуктов в базе
+              });
 
         return (
             <div className={styles['product-container']}>

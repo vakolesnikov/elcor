@@ -22,7 +22,7 @@ class ProductForm extends React.Component {
 
         const selectedItem = productList.find(item => item._id === selectedProductId) || {};
 
-        const { name, type, prices, descriptions, options } = selectedItem;
+        const { name, type, prices, descriptions, options, indexNumber } = selectedItem;
 
         const option = options ? Object.keys(options)[0] : '';
 
@@ -31,6 +31,7 @@ class ProductForm extends React.Component {
         this.name = name;
         this.type = type;
         this.option = option;
+        this.indexNumber = indexNumber;
 
         const generateInitialStateField = (values = []) => {
             return values.length
@@ -46,7 +47,8 @@ class ProductForm extends React.Component {
         ];
         this.optionsForProductOptions = [
             { value: 'memory', title: 'память' },
-            { value: 'display', title: 'display' }
+            { value: 'display', title: 'дисплей' },
+            { value: 'capacity', title: 'емкость' }
         ];
         this.fields = [
             {
@@ -153,9 +155,12 @@ class ProductForm extends React.Component {
                 <FormItemWrapper title="Наименование товара">
                     <input type="text" name="name" defaultValue={this.name || ''} required />
                 </FormItemWrapper>
+                <FormItemWrapper title="Порядковый номер">
+                    <input type="text" name="indexNumber" defaultValue={this.indexNumber || 0} />
+                </FormItemWrapper>
                 <FormItemWrapper title="Категория">
                     <Select
-                        isRequired
+                        isMultiple
                         defaultValue={this.type || this.optionsForTypes[0].value}
                         name="type"
                         options={this.optionsForTypes}
@@ -163,7 +168,6 @@ class ProductForm extends React.Component {
                 </FormItemWrapper>
                 <FormItemWrapper title="Наименование Опции">
                     <Select
-                        isRequired
                         defaultValue={this.option || this.optionsForProductOptions[0].value}
                         name="optionType"
                         options={this.optionsForProductOptions}

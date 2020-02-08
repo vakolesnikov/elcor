@@ -12,6 +12,9 @@ class ProductList extends React.Component {
         return (
             <div className={style['product-list-container']}>
                 <h2 className={style.title}>Список товаров</h2>
+                <div className={style['add-product-button']}>
+                    <Link to="/add_product">Добавить товар</Link>
+                </div>
                 <ol className={style['product-list']}>
                     {productList.map(item => (
                         <div key={item._id} className={style['product-item']}>
@@ -40,9 +43,6 @@ class ProductList extends React.Component {
                         </div>
                     ))}
                 </ol>
-                <div className={style['add-product-button']}>
-                    <Link to="/add_product">Добавить товар</Link>
-                </div>
             </div>
         );
     }

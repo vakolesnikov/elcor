@@ -37,7 +37,6 @@ export class ValuesField extends React.Component {
                                     type={fieldType}
                                     name={type}
                                     defaultValue={item.value ? item.value : ''}
-                                    required
                                 />
                             )}
 
