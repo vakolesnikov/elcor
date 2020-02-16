@@ -17,7 +17,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpe?g|gif|ico)$/i,
                 use: [
                     {
                         loader: 'file-loader',
@@ -48,6 +48,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            favicon: path.join(__dirname, 'src/frontend/assets/favicon.ico'),
             template: path.join(__dirname, 'src/frontend/index.html')
         })
     ],
