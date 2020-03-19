@@ -1,5 +1,5 @@
 import React from 'react';
-import { getProductList, originHost } from '../../api';
+import { getProductList, host } from '../../../api';
 import { optionsForProductOptions } from '../../../constants';
 
 import styles from './index.css';
@@ -53,7 +53,7 @@ export default class Products extends React.Component {
         } = this.state;
         const { name, options, prices, images } = currentProduct;
         const nameOption = options ? Object.keys(options)[0] : options;
-        const img = `${originHost}/images/${images[0]}`;
+        const img = `${host}/images/${images[0]}`;
 
         return (
             <div className={styles['product-card']}>
